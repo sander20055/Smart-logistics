@@ -1,0 +1,121 @@
+store_id,store_name,city,postcode,lat,lon,format,sales_area_m2,assigned_dc_ambient,assigned_dc_fresh,distance_to_dc_km,ze_zone,dock_type,unloading_window_start,unloading_window_end,click_collect
+ST001,FreshWay City Apeldoorn,Apeldoorn,7304 ZA,52.1918,5.9704,city,532,CDC-APD,RDC-NIJ,51.4,TRUE,street_level,06:00,08:00,FALSE
+ST002,FreshWay XL Apeldoorn Centrum,Apeldoorn,7306 CW,52.2034,5.9757,xl,2416,CDC-APD,RDC-NIJ,53.1,TRUE,trailer,06:00,08:00,TRUE
+ST003,FreshWay Apeldoorn Noord,Apeldoorn,7301 QR,52.2246,5.96,standard,1413,CDC-APD,RDC-ZWO,43.5,TRUE,rigid_only,06:00,08:00,FALSE
+ST004,FreshWay Apeldoorn Zuid,Apeldoorn,7303 FM,52.2046,5.9551,standard,1100,CDC-APD,RDC-NIJ,53.0,TRUE,rigid_only,06:00,08:00,FALSE
+ST005,FreshWay Apeldoorn Oost,Apeldoorn,7305 FJ,52.2062,5.9518,standard,1249,CDC-APD,RDC-NIJ,53.2,TRUE,rigid_only,06:00,08:00,FALSE
+ST006,FreshWay Apeldoorn West,Apeldoorn,7309 IM,52.2099,5.9852,standard,1332,CDC-APD,RDC-NIJ,54.2,TRUE,rigid_only,06:00,08:00,FALSE
+ST007,FreshWay Apeldoorn Stationskwartier,Apeldoorn,7300 BU,52.2292,5.9654,standard,1100,CDC-APD,RDC-ZWO,42.7,TRUE,rigid_only,06:00,08:00,FALSE
+ST008,FreshWay City Zwolle,Zwolle,8001 JE,52.5205,6.1002,city,532,CDC-APD,RDC-ZWO,1.6,TRUE,street_level,06:00,08:00,FALSE
+ST009,FreshWay XL Zwolle Centrum,Zwolle,8009 EV,52.5241,6.0532,xl,2000,CDC-APD,RDC-ZWO,2.9,TRUE,rigid_only,06:00,08:00,TRUE
+ST010,FreshWay Zwolle Noord,Zwolle,8003 ZA,52.518,6.0834,standard,1300,CDC-APD,RDC-ZWO,0.3,TRUE,rigid_only,06:00,08:00,FALSE
+ST011,FreshWay Zwolle Zuid,Zwolle,8003 RN,52.5317,6.0914,standard,1254,CDC-APD,RDC-ZWO,2.4,TRUE,rigid_only,06:00,08:00,FALSE
+ST012,FreshWay Zwolle Oost,Zwolle,8000 YQ,52.5231,6.0656,standard,1418,CDC-APD,RDC-ZWO,1.8,TRUE,rigid_only,06:00,08:00,FALSE
+ST013,FreshWay Zwolle West,Zwolle,8000 IY,52.5337,6.1072,standard,1100,CDC-APD,RDC-ZWO,3.3,FALSE,trailer,06:00,11:00,FALSE
+ST014,FreshWay Zwolle Stationskwartier,Zwolle,8006 IR,52.5142,6.11,standard,1100,CDC-APD,RDC-ZWO,2.4,FALSE,trailer,06:00,11:00,FALSE
+ST015,FreshWay City Nijmegen,Nijmegen,6507 GP,51.8396,5.8439,city,400,CDC-APD,RDC-NIJ,1.3,TRUE,street_level,06:00,08:00,FALSE
+ST016,FreshWay XL Nijmegen Centrum,Nijmegen,6501 XY,51.8622,5.8433,xl,2614,CDC-APD,RDC-NIJ,3.1,TRUE,trailer,06:00,08:00,TRUE
+ST017,FreshWay Nijmegen Noord,Nijmegen,6500 XG,51.8566,5.8647,standard,1441,CDC-APD,RDC-NIJ,2.1,TRUE,rigid_only,06:00,08:00,FALSE
+ST018,FreshWay Nijmegen Zuid,Nijmegen,6502 YU,51.8321,5.8667,standard,1458,CDC-APD,RDC-NIJ,1.8,TRUE,rigid_only,06:00,08:00,FALSE
+ST019,FreshWay Nijmegen Oost,Nijmegen,6500 ZI,51.8488,5.8554,standard,1178,CDC-APD,RDC-NIJ,0.9,TRUE,rigid_only,06:00,08:00,FALSE
+ST020,FreshWay Nijmegen West,Nijmegen,6508 FL,51.8625,5.8543,standard,1181,CDC-APD,RDC-NIJ,2.8,TRUE,rigid_only,06:00,08:00,FALSE
+ST021,FreshWay Nijmegen Stationskwartier,Nijmegen,6500 JF,51.8583,5.8329,standard,1161,CDC-APD,RDC-NIJ,3.2,TRUE,rigid_only,06:00,08:00,FALSE
+ST022,FreshWay City Arnhem,Arnhem,6802 ZR,51.9906,5.9096,city,437,CDC-APD,RDC-NIJ,21.8,TRUE,street_level,06:00,08:00,FALSE
+ST023,FreshWay XL Arnhem Centrum,Arnhem,6800 TU,51.992,5.9002,xl,2519,CDC-APD,RDC-NIJ,21.9,FALSE,trailer,06:00,11:00,TRUE
+ST024,FreshWay Arnhem Noord,Arnhem,6800 OV,51.978,5.9083,standard,1415,CDC-APD,RDC-NIJ,20.0,FALSE,trailer,06:00,11:00,FALSE
+ST025,FreshWay Arnhem Zuid,Arnhem,6804 KZ,51.9895,5.9042,standard,1179,CDC-APD,RDC-NIJ,21.6,FALSE,trailer,06:00,11:00,FALSE
+ST026,FreshWay Arnhem Oost,Arnhem,6807 QR,51.9803,5.9184,standard,1116,CDC-APD,RDC-NIJ,20.6,FALSE,trailer,06:00,11:00,FALSE
+ST027,FreshWay Arnhem West,Arnhem,6800 NY,51.984,5.9026,standard,1341,CDC-APD,RDC-NIJ,20.8,FALSE,trailer,06:00,11:00,FALSE
+ST028,FreshWay Arnhem Stationskwartier,Arnhem,6800 UR,51.9953,5.9181,standard,1355,CDC-APD,RDC-NIJ,22.7,FALSE,trailer,06:00,11:00,FALSE
+ST029,FreshWay City Enschede,Enschede,7500 TC,52.2235,6.9161,city,453,CDC-APD,RDC-ZWO,84.8,TRUE,street_level,06:00,08:00,FALSE
+ST030,FreshWay XL Enschede Centrum,Enschede,7508 OD,52.2244,6.9075,xl,2000,CDC-APD,RDC-ZWO,84.1,FALSE,trailer,06:00,11:00,TRUE
+ST031,FreshWay Enschede Noord,Enschede,7501 WO,52.2055,6.8814,standard,1202,CDC-APD,RDC-NIJ,105.0,FALSE,trailer,06:00,11:00,FALSE
+ST032,FreshWay Enschede Zuid,Enschede,7507 UB,52.2049,6.8991,standard,1289,CDC-APD,RDC-NIJ,106.4,FALSE,trailer,06:00,11:00,FALSE
+ST033,FreshWay Enschede Oost,Enschede,7501 FO,52.2117,6.918,standard,1223,CDC-APD,RDC-ZWO,85.8,FALSE,trailer,06:00,11:00,FALSE
+ST034,FreshWay Enschede West,Enschede,7508 DI,52.2194,6.8931,standard,1122,CDC-APD,RDC-ZWO,83.4,FALSE,trailer,06:00,11:00,FALSE
+ST035,FreshWay City Amersfoort,Amersfoort,3802 TN,52.1369,5.3812,city,509,CDC-APD,RDC-NIJ,60.1,TRUE,street_level,06:00,08:00,FALSE
+ST036,FreshWay XL Amersfoort Centrum,Amersfoort,3803 FX,52.1379,5.3937,xl,2001,CDC-APD,RDC-NIJ,59.4,FALSE,trailer,06:00,11:00,TRUE
+ST037,FreshWay Amersfoort Noord,Amersfoort,3808 WC,52.1415,5.4107,standard,1213,CDC-APD,RDC-NIJ,58.7,FALSE,trailer,06:00,11:00,FALSE
+ST038,FreshWay Amersfoort Zuid,Amersfoort,3804 ME,52.1559,5.3731,standard,1163,CDC-APD,RDC-NIJ,62.5,FALSE,trailer,06:00,11:00,FALSE
+ST039,FreshWay Amersfoort Oost,Amersfoort,3802 WT,52.1425,5.4006,standard,1161,CDC-APD,RDC-NIJ,59.4,FALSE,trailer,06:00,11:00,FALSE
+ST040,FreshWay Amersfoort West,Amersfoort,3805 FP,52.1668,5.3636,standard,1468,CDC-APD,RDC-NIJ,64.2,FALSE,trailer,06:00,11:00,FALSE
+ST041,FreshWay XL Deventer,Deventer,7405 IF,52.2635,6.1436,xl,2069,CDC-APD,RDC-ZWO,36.9,FALSE,trailer,06:00,11:00,TRUE
+ST042,FreshWay Deventer Centrum,Deventer,7403 QE,52.2516,6.1542,standard,1309,CDC-APD,RDC-ZWO,38.7,FALSE,trailer,06:00,11:00,FALSE
+ST043,FreshWay Deventer Noord,Deventer,7409 AL,52.2524,6.1692,standard,1515,CDC-APD,RDC-ZWO,38.9,FALSE,trailer,06:00,11:00,TRUE
+ST044,FreshWay Deventer Zuid,Deventer,7403 LY,52.259,6.1505,standard,1510,CDC-APD,RDC-ZWO,37.6,FALSE,trailer,06:00,11:00,TRUE
+ST045,FreshWay XL Ede,Ede,6719 NK,52.0295,5.6711,xl,2000,CDC-APD,RDC-NIJ,31.7,FALSE,trailer,06:00,11:00,TRUE
+ST046,FreshWay Ede Centrum,Ede,6711 CW,52.0448,5.6529,standard,1475,CDC-APD,RDC-NIJ,34.4,FALSE,trailer,06:00,11:00,TRUE
+ST047,FreshWay Ede Noord,Ede,6717 VM,52.0384,5.6896,standard,1362,CDC-APD,RDC-NIJ,32.0,FALSE,trailer,06:00,11:00,FALSE
+ST048,FreshWay Ede Zuid,Ede,6711 SL,52.033,5.638,standard,1319,CDC-APD,RDC-NIJ,33.7,FALSE,trailer,06:00,11:00,FALSE
+ST049,FreshWay XL Almelo,Almelo,7607 KK,52.3711,6.6365,xl,2646,CDC-APD,RDC-ZWO,53.1,FALSE,trailer,06:00,11:00,TRUE
+ST050,FreshWay Almelo Centrum,Almelo,7607 XG,52.3502,6.667,standard,1291,CDC-APD,RDC-ZWO,56.8,FALSE,trailer,06:00,11:00,FALSE
+ST051,FreshWay Almelo Noord,Almelo,7603 ZS,52.339,6.6841,standard,1125,CDC-APD,RDC-ZWO,58.8,FALSE,trailer,06:00,11:00,FALSE
+ST052,FreshWay XL Hengelo,Hengelo,7551 GJ,52.252,6.7888,xl,2606,CDC-APD,RDC-ZWO,73.0,FALSE,trailer,06:00,11:00,TRUE
+ST053,FreshWay Hengelo Centrum,Hengelo,7552 LB,52.2737,6.779,standard,1145,CDC-APD,RDC-ZWO,70.7,FALSE,trailer,06:00,11:00,FALSE
+ST054,FreshWay Hengelo Noord,Hengelo,7552 ZO,52.2698,6.8024,standard,1225,CDC-APD,RDC-ZWO,72.8,FALSE,trailer,06:00,11:00,FALSE
+ST055,FreshWay Hengelo Zuid,Hengelo,7553 RP,52.2815,6.7725,standard,1172,CDC-APD,RDC-ZWO,69.6,FALSE,trailer,06:00,11:00,FALSE
+ST056,FreshWay XL Doetinchem,Doetinchem,7008 HL,51.9664,6.2631,xl,2536,CDC-APD,RDC-NIJ,40.3,FALSE,trailer,06:00,11:00,TRUE
+ST057,FreshWay Doetinchem Centrum,Doetinchem,7006 YM,51.9764,6.2784,standard,1236,CDC-APD,RDC-NIJ,42.2,FALSE,trailer,06:00,11:00,FALSE
+ST058,FreshWay Doetinchem Noord,Doetinchem,7004 WA,51.9693,6.3053,standard,1184,CDC-APD,RDC-NIJ,43.9,FALSE,trailer,06:00,11:00,FALSE
+ST059,FreshWay XL Harderwijk,Harderwijk,3840 VI,52.325,5.6374,xl,2158,CDC-APD,RDC-ZWO,48.0,FALSE,trailer,06:00,11:00,TRUE
+ST060,FreshWay Harderwijk Centrum,Harderwijk,3842 IL,52.3248,5.6355,standard,1388,CDC-APD,RDC-ZWO,48.2,FALSE,trailer,06:00,11:00,FALSE
+ST061,FreshWay XL Zutphen,Zutphen,7203 MD,52.1522,6.2039,xl,2485,CDC-APD,RDC-NIJ,54.3,FALSE,trailer,06:00,11:00,TRUE
+ST062,FreshWay Zutphen Centrum,Zutphen,7203 TT,52.1525,6.2183,standard,1260,CDC-APD,RDC-NIJ,55.0,FALSE,trailer,06:00,11:00,FALSE
+ST063,FreshWay XL Kampen,Kampen,8262 PJ,52.5506,5.9113,xl,2033,CDC-APD,RDC-ZWO,15.9,FALSE,trailer,06:00,11:00,TRUE
+ST064,FreshWay Kampen Centrum,Kampen,8260 FC,52.5453,5.9265,standard,1416,CDC-APD,RDC-ZWO,14.4,FALSE,trailer,06:00,11:00,FALSE
+ST065,FreshWay XL Wageningen,Wageningen,6705 LX,51.9792,5.6581,xl,2474,CDC-APD,RDC-NIJ,26.6,FALSE,trailer,06:00,11:00,TRUE
+ST066,FreshWay Wageningen Centrum,Wageningen,6701 RC,51.9849,5.6791,standard,1174,CDC-APD,RDC-NIJ,26.0,FALSE,trailer,06:00,11:00,FALSE
+ST067,FreshWay XL Veenendaal,Veenendaal,3906 TV,52.0469,5.5564,xl,2163,CDC-APD,RDC-NIJ,39.9,FALSE,trailer,06:00,11:00,TRUE
+ST068,FreshWay Veenendaal Centrum,Veenendaal,3902 BS,52.0289,5.5668,standard,1372,CDC-APD,RDC-NIJ,37.4,FALSE,trailer,06:00,11:00,FALSE
+ST069,FreshWay Veenendaal Noord,Veenendaal,3901 QW,52.0149,5.5494,standard,1123,CDC-APD,RDC-NIJ,37.1,FALSE,trailer,06:00,11:00,FALSE
+ST070,FreshWay Barneveld,Barneveld,3776 ZE,52.1399,5.6078,standard,1100,CDC-APD,RDC-NIJ,48.4,FALSE,trailer,06:00,11:00,FALSE
+ST071,FreshWay Barneveld Centrum,Barneveld,3777 WP,52.1486,5.5974,standard,1261,CDC-APD,RDC-NIJ,49.9,FALSE,trailer,06:00,11:00,FALSE
+ST072,FreshWay Nunspeet,Nunspeet,8078 GG,52.3718,5.7601,standard,1242,CDC-APD,RDC-ZWO,35.3,FALSE,trailer,06:00,11:00,FALSE
+ST073,FreshWay Nunspeet Centrum,Nunspeet,8071 FF,52.3582,5.8152,standard,1118,CDC-APD,RDC-ZWO,32.8,FALSE,trailer,06:00,11:00,FALSE
+ST074,FreshWay Epe,Epe,8166 RM,52.3568,5.998,standard,1339,CDC-APD,RDC-ZWO,24.2,FALSE,trailer,06:00,11:00,FALSE
+ST075,FreshWay Raalte,Raalte,8100 ZH,52.3703,6.2892,standard,1190,CDC-APD,RDC-ZWO,27.8,FALSE,trailer,06:00,11:00,FALSE
+ST076,FreshWay Hardenberg,Hardenberg,7776 RT,52.5688,6.6452,standard,1273,CDC-APD,RDC-ZWO,50.0,FALSE,trailer,06:00,11:00,FALSE
+ST077,FreshWay Steenwijk,Steenwijk,8331 AV,52.7935,6.1194,standard,1497,CDC-APD,RDC-ZWO,40.2,FALSE,trailer,06:00,11:00,TRUE
+ST078,FreshWay Meppel,Meppel,7949 AE,52.6799,6.2135,standard,1284,CDC-APD,RDC-ZWO,26.3,FALSE,trailer,06:00,11:00,FALSE
+ST079,FreshWay Hoogeveen,Hoogeveen,7904 VX,52.7167,6.5052,standard,1508,CDC-APD,RDC-ZWO,47.1,FALSE,trailer,06:00,11:00,TRUE
+ST080,FreshWay Hoogeveen Centrum,Hoogeveen,7908 PZ,52.7088,6.5043,standard,1488,CDC-APD,RDC-ZWO,46.3,FALSE,trailer,06:00,11:00,TRUE
+ST081,FreshWay XL Emmen,Emmen,7803 XW,52.7694,6.8973,xl,2472,CDC-APD,RDC-ZWO,80.3,FALSE,trailer,06:00,11:00,TRUE
+ST082,FreshWay Emmen Centrum,Emmen,7804 NW,52.8023,6.924,standard,1452,CDC-APD,RDC-ZWO,84.6,FALSE,trailer,06:00,11:00,FALSE
+ST083,FreshWay XL Lelystad,Lelystad,8200 UK,52.5006,5.4801,xl,2345,CDC-APD,RDC-ZWO,53.1,FALSE,trailer,06:00,11:00,TRUE
+ST084,FreshWay Lelystad Centrum,Lelystad,8207 BJ,52.4996,5.4834,standard,1278,CDC-APD,RDC-ZWO,52.8,FALSE,trailer,06:00,11:00,FALSE
+ST085,FreshWay Lelystad Noord,Lelystad,8203 CE,52.5357,5.4678,standard,1448,CDC-APD,RDC-ZWO,54.2,FALSE,trailer,06:00,11:00,FALSE
+ST086,FreshWay Dronten,Dronten,8252 OO,52.5373,5.7316,standard,1143,CDC-APD,RDC-ZWO,31.1,FALSE,trailer,06:00,11:00,FALSE
+ST087,FreshWay Emmeloord,Emmeloord,8308 JL,52.6939,5.7444,standard,1329,CDC-APD,RDC-ZWO,39.3,FALSE,trailer,06:00,11:00,FALSE
+ST088,FreshWay Zeewolde,Zeewolde,3893 JC,52.3414,5.5134,standard,1495,CDC-APD,RDC-ZWO,56.2,FALSE,trailer,06:00,11:00,TRUE
+ST089,FreshWay Elburg,Elburg,8090 SX,52.452,5.8412,standard,1162,CDC-APD,RDC-ZWO,23.2,FALSE,trailer,06:00,11:00,FALSE
+ST090,FreshWay Oldenzaal,Oldenzaal,7571 RX,52.3111,6.94,standard,1470,CDC-APD,RDC-ZWO,81.2,FALSE,trailer,06:00,11:00,TRUE
+ST091,FreshWay Rijssen,Rijssen,7465 AC,52.3006,6.5242,standard,1196,CDC-APD,RDC-ZWO,49.8,FALSE,trailer,06:00,11:00,FALSE
+ST092,FreshWay Borne,Borne,7625 AQ,52.3108,6.7479,standard,1305,CDC-APD,RDC-ZWO,65.7,FALSE,trailer,06:00,11:00,FALSE
+ST093,FreshWay Winterswijk,Winterswijk,7100 DE,51.979,6.7004,standard,1140,CDC-APD,RDC-NIJ,77.7,FALSE,trailer,06:00,11:00,FALSE
+ST094,FreshWay Lochem,Lochem,7240 FV,52.1624,6.3965,standard,1402,CDC-APD,RDC-NIJ,66.5,FALSE,trailer,06:00,11:00,FALSE
+ST095,FreshWay Wijchen,Wijchen,6609 SR,51.8204,5.7416,standard,1372,CDC-APD,RDC-NIJ,10.9,FALSE,trailer,06:00,11:00,FALSE
+ST096,FreshWay Elst,Elst,6666 RU,51.9154,5.8719,standard,1444,CDC-APD,RDC-NIJ,10.5,FALSE,trailer,06:00,11:00,FALSE
+ST097,FreshWay Culemborg,Culemborg,4105 OI,51.9741,5.2193,standard,1100,CDC-APD,RDC-NIJ,60.0,FALSE,trailer,06:00,11:00,FALSE
+ST098,FreshWay Tiel,Tiel,4005 NL,51.8916,5.4488,standard,1472,CDC-APD,RDC-NIJ,37.2,FALSE,trailer,06:00,11:00,TRUE
+ST099,FreshWay Tiel Centrum,Tiel,4007 VS,51.8942,5.4199,standard,1251,CDC-APD,RDC-NIJ,39.8,FALSE,trailer,06:00,11:00,FALSE
+ST100,FreshWay Zaltbommel,Zaltbommel,5302 ZA,51.8153,5.2392,standard,1136,CDC-APD,RDC-NIJ,55.4,FALSE,trailer,06:00,11:00,FALSE
+ST101,FreshWay Zevenaar,Zevenaar,6903 IF,51.9194,6.0735,standard,1100,CDC-APD,RDC-NIJ,22.2,FALSE,trailer,06:00,11:00,FALSE
+ST102,FreshWay Ermelo,Ermelo,3852 VY,52.2853,5.6266,standard,1448,CDC-APD,RDC-ZWO,52.3,FALSE,trailer,06:00,11:00,FALSE
+ST103,FreshWay Nijkerk,Nijkerk,3862 OT,52.24,5.4819,standard,1424,CDC-APD,RDC-ZWO,66.4,FALSE,trailer,06:00,11:00,FALSE
+ST104,FreshWay Soest,Soest,3769 XD,52.1776,5.2632,standard,1516,CDC-APD,RDC-NIJ,71.7,FALSE,trailer,06:00,11:00,TRUE
+ST105,FreshWay Bunschoten,Bunschoten,3751 FO,52.2473,5.396,standard,1277,CDC-APD,RDC-ZWO,72.0,FALSE,trailer,06:00,11:00,FALSE
+ST106,FreshWay Rhenen,Rhenen,3910 DZ,51.9513,5.5649,standard,1175,CDC-APD,RDC-NIJ,30.5,FALSE,trailer,06:00,11:00,FALSE
+ST107,FreshWay Dieren,Dieren,6958 QB,52.0388,6.0862,standard,1201,CDC-APD,RDC-NIJ,34.9,FALSE,trailer,06:00,11:00,FALSE
+ST108,FreshWay Twello,Twello,7392 SO,52.2266,6.1168,standard,1408,CDC-APD,RDC-ZWO,41.9,FALSE,trailer,06:00,11:00,FALSE
+ST109,FreshWay Nijverdal,Nijverdal,7446 QB,52.3552,6.4785,standard,1450,CDC-APD,RDC-ZWO,41.9,FALSE,trailer,06:00,11:00,FALSE
+ST110,FreshWay Goor,Goor,7479 QE,52.2347,6.5574,standard,1120,CDC-APD,RDC-ZWO,58.4,FALSE,trailer,06:00,11:00,FALSE
+ST111,FreshWay Haaksbergen,Haaksbergen,7481 LL,52.1553,6.7384,standard,1359,CDC-APD,RDC-NIJ,90.4,FALSE,trailer,06:00,11:00,FALSE
+ST112,FreshWay Losser,Losser,7585 HN,52.269,7.0229,standard,1180,CDC-APD,RDC-ZWO,90.3,FALSE,trailer,06:00,11:00,FALSE
+ST113,FreshWay Putten,Putten,3881 XA,52.269,5.6215,standard,1476,CDC-APD,RDC-ZWO,54.2,FALSE,trailer,06:00,11:00,TRUE
+ST114,FreshWay Woudenberg,Woudenberg,3935 MC,52.0846,5.4081,standard,1496,CDC-APD,RDC-NIJ,53.1,FALSE,trailer,06:00,11:00,TRUE
+ST115,FreshWay Doesburg,Doesburg,6986 DV,51.9932,6.1333,standard,1100,CDC-APD,RDC-NIJ,32.8,FALSE,trailer,06:00,11:00,FALSE
+ST116,FreshWay Duiven,Duiven,6925 GR,51.9432,6.0123,standard,1346,CDC-APD,RDC-NIJ,20.0,FALSE,trailer,06:00,11:00,FALSE
+ST117,FreshWay Beuningen,Beuningen,6646 WL,51.8533,5.7957,standard,1256,CDC-APD,RDC-NIJ,5.8,FALSE,trailer,06:00,11:00,FALSE
+ST118,FreshWay Vaassen,Vaassen,8175 FD,52.2686,5.9946,standard,1389,CDC-APD,RDC-ZWO,36.6,FALSE,trailer,06:00,11:00,FALSE
+ST119,FreshWay Vroomshoop,Vroomshoop,7683 DH,52.469,6.5698,standard,1159,CDC-APD,RDC-ZWO,43.4,FALSE,trailer,06:00,11:00,FALSE
+ST120,FreshWay Delden,Delden,7495 OU,52.2425,6.6806,standard,1192,CDC-APD,RDC-ZWO,65.9,FALSE,trailer,06:00,11:00,FALSE

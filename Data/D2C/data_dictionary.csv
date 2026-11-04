@@ -1,0 +1,49 @@
+dataset,file,column,data_type,unit,description,example_value,required
+_how to open,ALL FILES,-,-,-,"These files are UTF-8, comma-separated, with a POINT as the decimal separator and ISO dates (YYYY-MM-DD). In Excel do not double-click them: use Data > From Text/CSV, set File Origin to 65001: Unicode (UTF-8), Delimiter to Comma and Locale to English (United States), then Load. Double-clicking on a Dutch Windows uses a semicolon and a decimal comma, which puts every row in one column and turns 1.5 into 15. In Power BI use Get Data > Text/CSV with the same three settings; it will detect them correctly on its own in most cases.",-,-
+"D3a home delivery, the execution",home_delivery_execution.csv,order_id,string,,"Primary key, and the foreign key to home_delivery_orders.order_id. Only orders that were actually delivered appear here; a left join from the orders file shows which ones were collected instead.",WO-20241219-004312,yes
+"D3a home delivery, the execution",home_delivery_execution.csv,delivery_actual,datetime,ISO 8601,Recorded moment of delivery at the door.,2024-12-19 18:12,yes
+"D3a home delivery, the execution",home_delivery_execution.csv,route_id,string,,Foreign key to delivery_routes.route_id. The run this drop belonged to.,HR-20241219-ZWO-014,yes
+"D3a home delivery, the execution",home_delivery_execution.csv,stop_sequence,integer,,"Position of this drop within the route, starting at 1.",12,yes
+"D3a home delivery, the execution",home_delivery_execution.csv,vehicle_id,string,,Foreign key to vehicles.vehicle_id. Always an electric van.,VN042,yes
+"D3a home delivery, the execution",home_delivery_execution.csv,distance_leg_km,decimal,km,Kilometres from the previous drop to this one.,2.3,yes
+"D3a home delivery, the execution",home_delivery_execution.csv,energy_kwh,decimal,kWh,Energy used on the leg to this drop.,0.74,yes
+"D3a home delivery, the execution",home_delivery_execution.csv,temp_min_c,decimal,degrees C,"Lowest temperature logged on the CHILLED crates during the run. The agreed lower limit is +2. EMPTY where the van carried no logger, or where the order had no chilled crates. Empty is not zero.",2.4,no
+"D3a home delivery, the execution",home_delivery_execution.csv,temp_max_c,decimal,degrees C,"Highest temperature logged on the FROZEN crates during the run. The agreed upper limit is -18. This column reads around minus twenty while temp_min_c reads around plus five: they describe two different temperature regimes, and that is not an error. EMPTY where the van carried no logger, or where the order had no frozen crates. Empty is not zero.",-19.4,no
+"D3a home delivery, the execution",home_delivery_execution.csv,crates_returned,integer,crates,Empty crates taken back from the customer.,2,yes
+"D3a home delivery, the execution",home_delivery_execution.csv,customer_rating,integer,1-5,Rating the customer gave. Empty when no rating was given.,5,no
+"D3a home delivery, the execution",home_delivery_execution.csv,complaint_code,enum,,Complaint registered after delivery. Empty when there was no complaint.,product_quality,no
+"D3a home delivery, the execution",home_delivery_execution.csv,on_time,boolean,,"Derived: the delivery fell inside the promised window, slot_start <= delivery_actual <= slot_end. Both bounds: arriving before the customer's window has opened is not on time either.",TRUE,yes
+"D3a home delivery, the execution",home_delivery_execution.csv,region_share_of_national_orders,decimal,fraction,"IMPORTANT. This file covers ONE delivery region, not the country. The value is that region's share of national online orders. National order level is over 650,000 rows, which is not a teaching file, so the order-level detail is regional and the national picture lives in home_delivery_daily.csv. Do not scale this file up by dividing: the region is a real region, not a random sample, so its site mix and slot mix are its own. Use it for anything per-order and use the daily file for anything per-chain.",0.18,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,date,date,ISO 8601,Delivery date.,2024-12-19,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,fulfilment_site,string,,Foreign key to sites.site_id.,EFC-APD,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,slot_start,time,HH:MM,Start of the two-hour delivery window.,17:00,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,slot_end,time,HH:MM,End of the delivery window.,19:00,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,slots_offered,integer,van-slots,"How many van-slots E-commerce PLANNED for this window at this site. Set from the own fleet only: the vans based at the site, the routes they are rostered for, and an equal share of the seven windows. Vans hired in by the day are not counted.",12,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,slot_capacity,integer,orders,How many deliveries the planned van-slots could make in this window: slots_offered times the drops per van-slot the plan assumes. This is the denominator of the slot fill rate.,144,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,slot_fill_rate_pct,decimal,%,orders_delivered over slot_capacity. E-commerce has a target of 92 per cent; above 100 means the window was oversold.,96.5,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,orders,integer,orders,"Online orders from this site in this slot, delivered and collected together.",182,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,click_collect_orders,integer,orders,"Of those, the ones collected at a store.",33,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,orders_delivered,integer,orders,"Of those, the ones a van delivered. Every execution figure below - on time, complaints, temperature - is measured over THIS number, not over orders.",149,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,order_value_eur,decimal,EUR incl. VAT,Total order value in the slot.,17284.40,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,avg_order_value_eur,decimal,EUR incl. VAT,Average order value.,94.97,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,crates,integer,crates,Crates delivered.,551,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,lines_ordered,integer,order lines,Order lines picked.,7648,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,lines_substituted,integer,order lines,Lines delivered as a substitute.,306,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,lines_missing,integer,order lines,Lines not delivered at all.,268,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,orders_on_time,integer,orders,Delivered orders that made the promised window.,142,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,on_time_pct,decimal,%,orders_on_time over orders_delivered.,95.1,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,complaints,integer,complaints,Orders carrying any complaint code.,5,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,quality_complaints,integer,complaints,Orders carrying complaint_code product_quality.,1,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,orders_with_temp_log,integer,orders,Orders delivered by a van that carried a temperature logger.,78,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,temp_excursions,integer,orders,"Of the logged orders, the ones with a reading out of range in EITHER direction: chilled crates below +2 C, or frozen crates above -18 C. The per-order readings are in home_delivery_execution.csv.",9,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,avg_customer_rating,decimal,1-5,Average of the ratings actually given. Empty when nobody rated.,4.52,no
+"D3c home delivery, routes",delivery_routes.csv,route_id,string,,Primary key. One record is one delivery route.,HR-20241219-APD-014,yes
+"D3c home delivery, routes",delivery_routes.csv,date,date,ISO 8601,Date the route ran.,2024-12-19,yes
+"D3c home delivery, routes",delivery_routes.csv,fulfilment_site,string,,Foreign key to sites.site_id. Where the route started.,EFC-APD,yes
+"D3c home delivery, routes",delivery_routes.csv,vehicle_id,string,,Foreign key to vehicles.vehicle_id. Always an electric van.,VN042,yes
+"D3c home delivery, routes",delivery_routes.csv,stops,integer,drops,Deliveries on the route.,33,yes
+"D3c home delivery, routes",delivery_routes.csv,crates,integer,crates,Crates carried.,104,yes
+"D3c home delivery, routes",delivery_routes.csv,distance_km,decimal,km,Kilometres driven on the route.,68.4,yes
+"D3c home delivery, routes",delivery_routes.csv,energy_kwh,decimal,kWh,Energy used on the route.,22.09,yes
+"D3c home delivery, routes",delivery_routes.csv,first_delivery,datetime,ISO 8601,Time of the first drop on the route.,2024-12-19 07:14,yes
+"D3c home delivery, routes",delivery_routes.csv,last_delivery,datetime,ISO 8601,Time of the last drop on the route. The return leg to the site is not recorded.,2024-12-19 12:58,yes

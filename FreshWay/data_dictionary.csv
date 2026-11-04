@@ -1,0 +1,60 @@
+dataset,file,column,data_type,unit,description,example_value,required
+_how to open,ALL FILES,-,-,-,"These files are UTF-8, comma-separated, with a POINT as the decimal separator and ISO dates (YYYY-MM-DD). In Excel do not double-click them: use Data > From Text/CSV, set File Origin to 65001: Unicode (UTF-8), Delimiter to Comma and Locale to English (United States), then Load. Double-clicking on a Dutch Windows uses a semicolon and a decimal comma, which puts every row in one column and turns 1.5 into 15. In Power BI use Get Data > Text/CSV with the same three settings; it will detect them correctly on its own in most cases.",-,-
+D0 master data,stores.csv,store_id,string,,"Primary key. Store identifier, ST001-ST120.",ST042,yes
+D0 master data,stores.csv,store_name,string,,"Trading name, including the store format label.",FreshWay XL Zwolle,yes
+D0 master data,stores.csv,city,string,,Municipality the store is in.,Zwolle,yes
+D0 master data,stores.csv,postcode,string,,"Dutch postcode, four digits and two letters.",8014 QJ,yes
+D0 master data,stores.csv,lat,decimal,degrees,"Latitude, WGS84. Approximate, for distance calculations.",52.5104,yes
+D0 master data,stores.csv,lon,decimal,degrees,"Longitude, WGS84.",6.0742,yes
+D0 master data,stores.csv,format,enum,,"Store format: city (6 stores, 400-600 m2), standard (96, 1,100-1,600 m2) or xl (18, 2,000-2,800 m2).",standard,yes
+D0 master data,stores.csv,sales_area_m2,integer,m2,"Net sales floor area. Chain average is 1,400 m2.",1310,yes
+D0 master data,stores.csv,assigned_dc_ambient,string,,"Foreign key to sites.site_id. The site that supplies this store with ambient, frozen and non-food. Always the central DC.",CDC-APD,yes
+D0 master data,stores.csv,assigned_dc_fresh,string,,"Foreign key to sites.site_id. The regional DC that supplies this store with fresh. A store has two deliveries a day, one from this site and one from the central DC; site_id in store_replenishment.csv says which one a delivery came from.",RDC-ZWO,yes
+D0 master data,stores.csv,distance_to_dc_km,decimal,km,Road distance to the assigned regional DC.,9.4,yes
+D0 master data,stores.csv,ze_zone,boolean,,TRUE if the store sits inside a zero-emission zone for city logistics.,TRUE,yes
+D0 master data,stores.csv,dock_type,enum,,"Unloading facility: trailer, rigid_only or street_level. Determines which vehicles can serve the store.",trailer,yes
+D0 master data,stores.csv,unloading_window_start,time,HH:MM,Start of the store's morning acceptance window.,06:00,yes
+D0 master data,stores.csv,unloading_window_end,time,HH:MM,End of the store's morning acceptance window.,11:00,yes
+D0 master data,stores.csv,click_collect,boolean,,TRUE if the store is a click and collect pick-up point. 30 stores are.,TRUE,yes
+D0 master data,product_groups.csv,group_id,string,,"Primary key. Product group identifier, PG01-PG20.",PG01,yes
+D0 master data,product_groups.csv,group_name,string,,Product group name.,Fruit and vegetables,yes
+D0 master data,product_groups.csv,category,enum,,"Assortment category: ambient grocery, chilled fresh, frozen or non-food. Bread and bakery carries category chilled fresh and temperature zone ambient.",chilled fresh,yes
+D0 master data,product_groups.csv,temp_zone,enum,,"Temperature regime in storage and transport: ambient, chilled or frozen.",chilled,yes
+D0 master data,product_groups.csv,shelf_life_days,integer,days,Typical shelf life of a product in this group.,4,yes
+D0 master data,product_groups.csv,avg_price_eur,decimal,EUR incl. VAT,"Average selling price of one consumer unit, including VAT.",1.85,yes
+D0 master data,product_groups.csv,units_per_case,integer,units,Consumer units in one case (collo). Multiply by avg_price_eur to get the value of a case; the volume-weighted average is EUR 22.50.,14,yes
+D0 master data,product_groups.csv,colli_per_rc,integer,cases,Cases that fit on one roll cage for this group. The volume-weighted average is 50.,45,yes
+D0 master data,product_groups.csv,share_of_skus,decimal,%,"Share of the 16,000 SKUs an average store carries. The twenty groups sum to 100.",8.0,yes
+D0 master data,product_groups.csv,share_of_revenue,decimal,%,Share of chain store revenue. The twenty groups sum to 100.,9.0,yes
+D0 master data,product_groups.csv,shrink_inefficiency,decimal,%,Shrink for this group as a percentage of the units it sells.,4.64,yes
+D0 master data,product_groups.csv,vat_rate,decimal,fraction,"Dutch VAT rate: 0.09 on food, 0.21 on alcohol and non-food.",0.09,yes
+D0 master data,product_groups.csv,supply_flow,enum,,"Which of the two daily deliveries carries this group: regional (fresh, morning, from the store's regional DC) or central (ambient, frozen and non-food, afternoon, from the central DC). Bread has supply flow regional and temperature zone ambient.",regional,yes
+D0 master data,vehicles.csv,vehicle_id,string,,"Primary key. TR = tractor unit, RG = rigid truck, VN = delivery van.",TR012,yes
+D0 master data,vehicles.csv,type,enum,,"tractor_trailer (66 roll cages), city_trailer (40 roll cages), rigid (30 roll cages) or delivery_van (130 crates). The own fleet is 40 tractor_trailer, 10 city_trailer, 4 rigid and 82 delivery_van.",tractor_trailer,yes
+D0 master data,vehicles.csv,capacity_rc,integer,roll cages,"Roll cage capacity. Empty for delivery vans, which are measured in crates.",66,no
+D0 master data,vehicles.csv,capacity_crates,integer,crates,"Crate capacity. Empty for trucks, which are measured in roll cages.",130,no
+D0 master data,vehicles.csv,powertrain,enum,,diesel or electric.,diesel,yes
+D0 master data,vehicles.csv,range_km,integer,km,Practical range on a full tank or battery.,900,yes
+D0 master data,vehicles.csv,consumption_per_100km,decimal,l or kWh per 100 km,Fuel or energy consumption. The unit is in consumption_unit.,30.0,yes
+D0 master data,vehicles.csv,consumption_unit,enum,,"l for diesel, kWh for electric.",l,yes
+D0 master data,vehicles.csv,ze_zone_allowed,boolean,,TRUE if the vehicle may enter a zero-emission zone. Only electric vehicles may.,FALSE,yes
+D0 master data,vehicles.csv,home_site,string,,Foreign key to sites.site_id. Where the vehicle is based.,CDC-APD,yes
+D0 master data,vehicles.csv,ownership,enum,,"owned, hired or subcontracted. Owned is FreshWay's own fleet: 40 tractor_trailer, 10 city_trailer, 4 rigid and 82 delivery_van. Hired vans and subcontracted tractor units appear only on the days they were used.",owned,yes
+D0 master data,vehicles.csv,refrigerated,boolean,,"TRUE if the vehicle has an active cooling unit, FALSE if it does not.",TRUE,yes
+D0 master data,suppliers.csv,supplier_id,string,,"Primary key. Supplier identifier, SUP001-SUP450.",SUP018,yes
+D0 master data,suppliers.csv,supplier_name,string,,Supplier trading name.,Rijnvallei BV,yes
+D0 master data,suppliers.csv,product_groups,string,,Comma-separated list of product group ids this supplier delivers. Not normalised.,"PG12,PG18",yes
+D0 master data,suppliers.csv,edi_orders,boolean,,TRUE if orders are sent to this supplier over EDI. All 450 are.,TRUE,yes
+D0 master data,suppliers.csv,edi_desadv,boolean,,"TRUE if the supplier returns an electronic despatch advice, FALSE if it does not.",TRUE,yes
+D0 master data,suppliers.csv,agreed_lead_time_days,integer,days,Contractual lead time from order to delivery.,3,yes
+D0 master data,suppliers.csv,agreed_slot_window_min,integer,minutes,Width of the contractual arrival slot at the dock.,60,yes
+D0 master data,sites.csv,site_id,string,,Primary key. Site identifier.,CDC-APD,yes
+D0 master data,sites.csv,site_name,string,,Site name.,CDC Apeldoorn,yes
+D0 master data,sites.csv,role,enum,,"central_dc (national DC), regional_dc (fresh DC), efc (e-fulfilment centre) or hub (local online hub). Stores are supplied from central_dc and regional_dc; consumer orders are picked at efc and hub.",central_dc,yes
+D0 master data,sites.csv,city,string,,Municipality the site is in.,Apeldoorn,yes
+D0 master data,sites.csv,floor_area_m2,integer,m2,Gross floor area.,30000,yes
+D0 master data,sites.csv,grid_connection_kva,integer,kVA,Contracted electrical grid connection of the site.,1500,yes
+D0 master data,sites.csv,peak_load_kw,integer,kW,Electrical peak load recorded at the site.,1060,yes
+D0 master data,sites.csv,dock_doors,integer,doors,"Loading docks, inbound and outbound together.",28,yes
+D0 master data,sites.csv,temp_zones_m2,string,,Semicolon-separated temperature zones and their floor area.,ambient 22000;frozen 6000;chilled 2000,yes
+D0 master data,sites.csv,shifts,integer,shifts per day,Shifts worked per operating day.,3,yes

@@ -1,0 +1,31 @@
+dataset,file,column,data_type,unit,description,example_value,required
+_how to open,ALL FILES,-,-,-,"These files are UTF-8, comma-separated, with a POINT as the decimal separator and ISO dates (YYYY-MM-DD). In Excel do not double-click them: use Data > From Text/CSV, set File Origin to 65001: Unicode (UTF-8), Delimiter to Comma and Locale to English (United States), then Load. Double-clicking on a Dutch Windows uses a semicolon and a decimal comma, which puts every row in one column and turns 1.5 into 15. In Power BI use Get Data > Text/CSV with the same three settings; it will detect them correctly on its own in most cases.",-,-
+"D2b DC picking, line sample",pick_lines_sample.csv,pick_id,string,,Primary key. One record is one pick line.,PK-20250210-004312,yes
+"D2b DC picking, line sample",pick_lines_sample.csv,date,date,ISO 8601,Date the line was picked.,2025-02-10,yes
+"D2b DC picking, line sample",pick_lines_sample.csv,site_id,string,,Foreign key to sites.site_id. Where the line was picked.,RDC-ZWO,yes
+"D2b DC picking, line sample",pick_lines_sample.csv,shift,enum,,"night, morning or afternoon.",night,yes
+"D2b DC picking, line sample",pick_lines_sample.csv,order_type,enum,,store or consumer.,store,yes
+"D2b DC picking, line sample",pick_lines_sample.csv,order_ref,string,,Foreign key. For order_type store it is store_replenishment.delivery_id; for order_type consumer it is home_delivery_orders.order_id.,DL-20241118-01234,yes
+"D2b DC picking, line sample",pick_lines_sample.csv,product_group,string,,Foreign key to product_groups.group_id.,PG12,yes
+"D2b DC picking, line sample",pick_lines_sample.csv,location,string,,"Pick location: prefix HOME- or OVF-, then temperature zone, aisle, bay and level.",HOME-AMB-07-23-02,yes
+"D2b DC picking, line sample",pick_lines_sample.csv,cases,integer,cases,Cases picked on this line.,3,yes
+"D2b DC picking, line sample",pick_lines_sample.csv,pick_time_sec,integer,seconds,Time spent on this line.,22,yes
+"D2b DC picking, line sample",pick_lines_sample.csv,picker_id,string,,Operator identifier.,PIC047,yes
+"D2b DC picking, line sample",pick_lines_sample.csv,staff_type,enum,,own or agency.,own,yes
+"D2b DC picking, line sample",pick_lines_sample.csv,error_flag,boolean,,TRUE if the line was picked incorrectly.,FALSE,yes
+"D2b DC picking, line sample",pick_lines_sample.csv,error_type,enum,,Kind of error. Empty when error_flag is FALSE.,wrong_quantity,no
+"D2b DC picking, line sample",pick_lines_sample.csv,sample_fraction,decimal,fraction,The share of the real pick lines this record stands for. Divide a count by this fraction to get back to the site volume. Store lines and consumer lines carry their own fraction.,0.0833,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,date,date,ISO 8601,Operating date.,2025-02-10,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,site_id,string,,Foreign key to sites.site_id.,CDC-APD,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,shift,enum,,"night, morning or afternoon.",night,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,order_type,enum,,store or consumer.,store,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,temp_zone,enum,,"ambient, chilled or frozen. Part of the grain: one row per date, site, shift, order type and temperature zone.",chilled,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,lines_picked,integer,lines,Pick lines completed in this shift and zone.,6140,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,cases_picked,integer,cases,Cases picked in this shift.,73688,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,pick_time_total_min,integer,minutes,Total picking time in this shift.,6754,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,avg_pick_time_sec,decimal,seconds,Average time per pick line.,22.0,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,pickers_active,integer,people,Operators needed at an 85 per cent utilisation of an 8-hour shift.,17,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,lines_own_staff,integer,lines,Lines picked by permanent staff.,15106,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,lines_agency_staff,integer,lines,Lines picked by agency staff.,3316,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,errors,integer,lines,Lines picked incorrectly.,66,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,error_rate_pct,decimal,%,errors divided by lines_picked.,0.36,yes

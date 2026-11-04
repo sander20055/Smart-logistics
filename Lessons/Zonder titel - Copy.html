@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="nl"><head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" type="text/css" href="/shared/_pages/../_assets/thirdpartylib/bootstrap-4.6.2/css/bootstrap.min.css">
+   <!-- Font Awesome CSS -->
+   <link rel="stylesheet" type="text/css" href="/shared/_pages/../_assets/thirdpartylib/fontawesome-free-6.1.1-web/css/all.min.css">
+   <!-- Lightbox2-2.11.3 CSS -->
+   <link rel="stylesheet" type="text/css" href="/shared/_pages/../_assets/thirdpartylib/lightbox2-2.11.3/css/lightbox.css">
+   <!-- Template CSS -->
+   <link rel="stylesheet" type="text/css" href="/shared/_pages/../_assets/css/styles.min.css">
+   <link rel="stylesheet" type="text/css" href="/shared/_pages/../_assets/css/custom.css">
+   <!-- DO NOT EDIT CODE ABOVE THIS LINE -->
+   <title>Smart Logistics — Lesson 3</title>
+<style>
+
+</style><link rel="stylesheet" href="/shared/css_styles/WH_styles.css" data-override="override"></head><body><div class="body--theme1">
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-10  offset-sm-1" role="main"><!--start back to top button-->&nbsp;<button type="button" aria-label="scroll-naar-boven-knop" class="btn  btn-floating  btn-sm  hvr-bob" id="btn-back-to-top" tabindex="0"> <i class="fa-solid  fa-chevron-up"></i> </button> <!--end back to top button--><!-- DO NOT EDIT CODE ABOVE THIS LINE --><!-- Smart Logistics EDSLOG.24 — Brightspace page, lesson 3.
+     Paste everything below into the Brightspace HTML editor (Insert Stuff > ... > source code / "</>").
+     Only official Windesheim page elements are used, so it renders with the course stylesheet. -->
+<h1>Lesson 3 — Data driven logistics</h1>
+<p class="lead">Today the data opens. By the end of the lesson your department can say where each of its numbers comes from, which system produced it, and who else needs it — and it has two written agreements to prove it.</p>
+<!--start icon callout-->
+<div class="card  card-graphic  bg-brand-light  mdb-shadow-4-strong  my-5  hover-shadow-transform-1">
+<div class="card-icon-top  z-depth-1"><i class="fa-solid  fa-exclamation  fa-2x  hvr-buzz-out"></i></div>
+<div class="card-body">
+<div class="card-text  pt-1">
+<p class="call-out-text">Before you come</p>
+<!--start list-->
+<ul class="list-brand">
+<li><strong>Hand in</strong> <em>SA1 — research goal &amp; plan</em>, including its <em>Cross-delivery</em> paragraph. It has to be in before the lesson starts, because the Board reads it before the commitments review.</li>
+<li><strong>Confirm</strong> the cross-delivery you received from another department: one line saying you got it and whether it was usable.</li>
+<li><strong>Open</strong> your own department's folder in <em>Company info</em> once and look at what is in <em>data</em>. You do not have to analyse anything yet — just see how little there is.</li>
+<li><strong>Read</strong> the section <em>Read this before the lesson</em> below. About ten minutes.</li>
+<li>Bring a laptop with Excel or Power BI on it.</li>
+</ul>
+<!--end list--></div>
+</div>
+</div>
+<!--end icon callout--><hr class="sep-3  my-5">
+<h2>What we do in this lesson</h2>
+<p>The rhythm is the same as every week. This is what fills it today.</p>
+<!--start list-->
+<ol class="box-number">
+<li><strong>Board opening and commitments</strong> — the Board walks through the Decision Log, and each manager answers for last week's commitment: met, not met and why, or adjusted in advance. You also get feedback on the research plan you handed in.</li>
+<li><strong>Masterclass</strong> — it opens with a <strong>ten-minute demonstration in Excel</strong> on <em>stores.csv</em> and <em>sites.csv</em>, the public master data every department has: open, filter, group, join — and check. After that: the systems a supermarket runs on, and what a data flow diagram is.</li>
+<li><strong>The five bodies meet</strong> — in the Data Council the first <strong>Interface Agreements</strong> are made. Each department also gets its own row of the <strong>FreshWay Interface Map</strong> on paper: your two to four fixed counterparties, so you never have to work out who to talk to.</li>
+<li><strong>Department work</strong> — you start the data model with what everyone brought back from their body.</li>
+<li><strong>Board close</strong> — your manager says out loud what your department will have ready by lesson 4.</li>
+</ol>
+<!--end list-->
+<p>One sentence about that demonstration, so you take the right picture of a data project away with you: <em>in a real data project, preparing the data is usually the most expensive part — we did that for you.</em> What is left for you is the part that needs judgement.</p>
+<hr class="sep-3  my-5">
+<h2>Read this before the lesson</h2>
+<h3>The systems a supermarket runs on</h3>
+<p>A supermarket does not have one system. It has a handful of large ones, each responsible for a piece of the operation, and every one of them leaves data behind. You do not have to be able to build them — you have to know which one your numbers come out of, because that decides what the numbers mean.</p>
+<!-- start table -->
+<table class="table table-bordered table-striped"><caption><strong>Table 1.</strong> The core systems, and the data each one leaves behind</caption>
+<thead>
+<tr>
+<th scope="col">System</th>
+<th scope="col">What it does</th>
+<th scope="col">The data it creates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">ERP</th>
+<td>
+<p>The company's administrative backbone: purchasing, stock, sales, finance, staff. Everything that has to be booked somewhere.</p>
+</td>
+<td>
+<p>Orders, invoices, stock positions, cost bookings.</p>
+</td>
+</tr>
+<tr>
+<th scope="row">WMS</th>
+<td>
+<p>Runs the distribution centre: goods in, put-away, order picking, goods out, returns.</p>
+</td>
+<td>
+<p>Receipts, storage locations, pick lines, picking times, errors.</p>
+</td>
+</tr>
+<tr>
+<th scope="row">TMS</th>
+<td>
+<p>Plans transport: which load on which vehicle, in which order, along which route.</p>
+</td>
+<td>
+<p>Routes, stops, kilometres, planned and actual arrival times.</p>
+</td>
+</tr>
+<tr>
+<th scope="row">POS</th>
+<td>
+<p>The checkout. It sells, and in doing so it says what actually left the shelf.</p>
+</td>
+<td>
+<p>Sales per product, per store, per moment — the only true demand signal there is.</p>
+</td>
+</tr>
+<tr>
+<th scope="row">E-business platform</th>
+<td>
+<p>The webshop: the customer chooses a basket and a delivery slot, and the promise is made there.</p>
+</td>
+<td>
+<p>Online orders, chosen slots, substitutions, customer communication.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- end table -->
+<p>Those five are inside the company. The link outwards has its own name: <strong>EDI</strong>, electronic data interchange — a fixed message format in which a supplier's system talks to yours without anyone retyping anything. An order goes out, an electronic despatch advice comes back saying what is actually on the truck, and the goods receipt can be checked against it automatically.</p>
+<p>That is the theory. At FreshWay there are <strong>450 suppliers, and roughly a third of them send no electronic despatch advice at all</strong> — you can see it yourself in the <em>edi_desadv</em> column of <em>suppliers.csv</em>. For that third, everything that arrives has to be counted and typed in by hand at the dock. <mark class="highlighter1">A system is only as good as the least digital partner connected to it</mark>, and that is a business problem long before it is an IT problem.</p>
+<h3>What a data flow diagram is</h3>
+<p>A data flow diagram is a picture of how data moves through an organisation: where it enters, what happens to it, where it is kept, and where it leaves. It deliberately says nothing about technology — no servers, no databases, no programming. That is why a manager can read one, and it is why we use it here. It has exactly four elements: an <strong>actor</strong> (someone or something outside the process that sends or receives data), a <strong>process</strong> (something that happens to the data), a <strong>data store</strong> (where the data sits still), and a <strong>data flow</strong> (the arrow, with a name on it).</p>
+<p>Three steps of a real FreshWay flow, to see the four elements in place.</p>
+<!--start list-->
+<ol class="large-number-slim">
+<li><strong>Actor to process</strong> — a supplier sends an electronic despatch advice: this truck, these product groups, this many pallets, this slot. The supplier is an actor; the message is a data flow, and its name is <em>despatch advice</em>.</li>
+<li><strong>Process to data store</strong> — at the goods receipt the truck is actually weighed, counted and temperature-checked, and the result is compared with what was announced. That comparison is the process. What comes out of it is written to the receipts record — the data store you know as <em>inbound_receipts.csv</em>.</li>
+<li><strong>Data store to actor</strong> — Inventory and supply chain management reads that record to know what is really in stock. Another department, another arrow, and the reason your diagram cannot stop at your own door.</li>
+</ol>
+<!--end list-->
+<p>Two rules keep a diagram readable. Every arrow has a name, because <em>data</em> is not a name. And every arrow starts and ends somewhere: no loose ends, no flows that come from nowhere. Where your arrow crosses into another department, that is exactly where an Interface Agreement belongs.</p>
+<!--start card-->
+<div class="card  col-12  bg-grey-100  mdb-shadow-4-strong  my-5  mx-auto  w-100">
+<div class="card-body">
+<h3 class="card-title  mb-1">You have three files, not seventeen</h3>
+<p>The FreshWay dataset as a whole is large. Your part of it is not. Your department folder holds <strong>at most three files</strong>, plus the shared master data everybody gets — stores, product groups, vehicles, suppliers and sites — and a <em>data_dictionary.csv</em> that explains every column of every file, with its unit and its meaning.</p>
+<p>All of it covers one quarter: Monday 14 October 2024 to Sunday 12 January 2025, thirteen weeks. That window is not an average quarter. It contains the busiest week of the year and the quietest, four weeks apart. Take that into account before you extrapolate anything from it.</p>
+</div>
+</div>
+<!--end card--><!--start icon callout-->
+<div class="card  card-graphic  bg-white  mdb-shadow-4-strong  my-5">
+<div class="card-icon-top  z-depth-1"><i class="fa-solid  fa-lightbulb  fa-2x  hvr-pulse"></i></div>
+<div class="card-body">
+<div class="card-text  pt-1">
+<p class="call-out-text">Watch out for this</p>
+<p><strong>A sample is not a total.</strong> Some files are a sample on purpose, and they say so in a column. The pick lines are a systematic one-in-twelve sample, with the fraction written in <em>sample_fraction</em>; multiply by one divided by that fraction and you are back at the real volume. The two home-delivery order files cover one delivery region, about a fifth of national orders — for anything national, use the daily file that has all six sites in it. Divide by the wrong denominator and every conclusion after it is wrong by the same factor.</p>
+<p><strong>And empty is not zero.</strong> An empty cell means <em>not recorded</em>, which is a different fact from <em>nothing happened</em>. A spreadsheet will happily average the two together. The <em>Dataset guide</em> lists the traps per file — read the two pages about your own file before you draw a conclusion from it.</p>
+</div>
+</div>
+</div>
+<!--end icon callout--><!--start list-->
+<ul class="list-brand">
+<li><strong>Your first five minutes with your data</strong>, in <em>Company info &gt; About FreshWay</em>. One page, four movements and one habit: open · filter · group · join — and check. Worked out on the same two files as the demonstration, so you can do it again afterwards at your own pace.</li>
+<li><strong>Dataset guide</strong>, same folder. What is in each file and, more importantly, which trap is in it. This is the one document that will save you a rewrite.</li>
+<li><strong>data_dictionary.csv</strong>, next to every dataset. Every column, with type, unit and meaning. Look a column up rather than guess what it holds.</li>
+<li><strong>FreshWay glossary — twenty words</strong>, same folder. Case, pick line, temperature zone, fill rate, on time. The column names of your data are in there too.</li>
+</ul>
+<!--end list--><hr class="sep-3  my-5">
+<h2>What you agree at the end of this lesson</h2>
+<!--start list-->
+<ul class="list-brand">
+<li><strong>SA2 — data model</strong>, handed in on Brightspace before lesson 4. An overview of the data that flows through your department, drawn as a data flow diagram: which data comes in, from which actor or system, what happens to it, where it is stored, and where it goes. Connect your flows to the other departments, so every arrow starts and ends at a named actor or process. No loose ends.</li>
+<li>Inside it, one <strong>Cross-delivery</strong> paragraph, and this week it is written down twice: <strong>two Interface Agreements</strong>, signed by the departments that <em>receive</em> the data. They sign, because they are the ones who decide whether what you send is usable.</li>
+<li>Your row of the <strong>Interface Map</strong> tells you who your fixed counterparties are. Start there rather than with whoever you happen to know.</li>
+</ul>
+<!--end list-->
+<p>Adjusting a commitment in advance costs nothing: say before the lesson what you will not manage and what you will deliver instead. Saying nothing is the only real failure.</p>
+<hr>
+<p class="small"><em>Transparency — GenAI. This page was written together with GenAI (Claude, Anthropic) on the basis of the course design and the lesson deck. The systems, the figures and the assignment are the lecturers'; the model was used to structure and phrase the page for students. Human-AI Agency Label: Co-Creator. Label source: Boetje, J., &amp; Baake, G. (2026). Nine prototypical human-AI agency patterns [Figure]. figshare. https://doi.org/10.6084/m9.figshare.31706884 (CC BY 4.0).</em></p>
+<!-- DO NOT EDIT CODE BELOW THIS LINE --></div>
+<div class="col-sm-10  offset-sm-1"><footer></footer></div>
+</div>
+</div>
+</div>
+<p>
+<script src="/shared/_pages/../_assets/thirdpartylib/jquery/jquery-3.5.1.min.js"></script>
+<script src="/shared/_pages/../_assets/thirdpartylib/popper-js/popper-1.16.1.min.js"></script>
+<script src="/shared/_pages/../_assets/thirdpartylib/bootstrap-4.6.2/js/bootstrap.min.js"></script>
+</p>
+<!-- Lightbox2-2.11.3 -->
+<p>
+<script src="/shared/_pages/../_assets/thirdpartylib/lightbox2-2.11.3/js/lightbox.js"></script>
+</p>
+<!-- Balance Text Adobe -->
+<p>
+<script src="/shared/_pages/../_assets/thirdpartylib/balance-text/balancetext.min.js"></script>
+</p>
+<!-- Template Javascript -->
+<p>
+<script src="/shared/_pages/../_assets/js/scripts.min.js"></script>
+<script src="/shared/_pages/../_assets/js/custom.js"></script>
+</p></body></html>

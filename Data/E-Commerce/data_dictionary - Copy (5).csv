@@ -1,0 +1,41 @@
+dataset,file,column,data_type,unit,description,example_value,required
+_how to open,ALL FILES,-,-,-,"These files are UTF-8, comma-separated, with a POINT as the decimal separator and ISO dates (YYYY-MM-DD). In Excel do not double-click them: use Data > From Text/CSV, set File Origin to 65001: Unicode (UTF-8), Delimiter to Comma and Locale to English (United States), then Load. Double-clicking on a Dutch Windows uses a semicolon and a decimal comma, which puts every row in one column and turns 1.5 into 15. In Power BI use Get Data > Text/CSV with the same three settings; it will detect them correctly on its own in most cases.",-,-
+"D3a home delivery, the promise",home_delivery_orders.csv,order_id,string,,Primary key. One record is one consumer order.,WO-20241219-004312,yes
+"D3a home delivery, the promise",home_delivery_orders.csv,order_datetime,datetime,ISO 8601,Moment the customer placed the order.,2024-12-17 20:41,yes
+"D3a home delivery, the promise",home_delivery_orders.csv,customer_area,string,,Four-digit postcode area of the delivery address.,8014,yes
+"D3a home delivery, the promise",home_delivery_orders.csv,fulfilment_site,string,,Foreign key to sites.site_id. The hub or e-fulfilment centre that picked the order.,HUB-ZWO,yes
+"D3a home delivery, the promise",home_delivery_orders.csv,slot_start,datetime,ISO 8601,Start of the two-hour window promised to the customer.,2024-12-19 17:00,yes
+"D3a home delivery, the promise",home_delivery_orders.csv,slot_end,datetime,ISO 8601,End of the promised window.,2024-12-19 19:00,yes
+"D3a home delivery, the promise",home_delivery_orders.csv,slot_price_eur,decimal,EUR,Delivery charge for this slot. Off-peak slots are free.,4.95,yes
+"D3a home delivery, the promise",home_delivery_orders.csv,crates_ambient,integer,crates,Ambient crates in the order.,2,yes
+"D3a home delivery, the promise",home_delivery_orders.csv,crates_chilled,integer,crates,Chilled crates in the order.,1,yes
+"D3a home delivery, the promise",home_delivery_orders.csv,crates_frozen,integer,crates,Frozen crates in the order.,0,yes
+"D3a home delivery, the promise",home_delivery_orders.csv,lines_ordered,integer,order lines,Order lines the customer placed.,44,yes
+"D3a home delivery, the promise",home_delivery_orders.csv,lines_substituted,integer,order lines,Lines supplied as a substitute product.,2,yes
+"D3a home delivery, the promise",home_delivery_orders.csv,lines_missing,integer,order lines,Lines that could not be supplied at all.,1,yes
+"D3a home delivery, the promise",home_delivery_orders.csv,order_value_eur,decimal,EUR incl. VAT,"Order value INCLUDING VAT, which is what the customer pays. Every cost field in these datasets excludes VAT.",104.35,yes
+"D3a home delivery, the promise",home_delivery_orders.csv,click_collect,boolean,,TRUE if the customer collected the order at one of the 30 collection stores instead of having it delivered. About 18 per cent of online orders. These orders have NO record in home_delivery_execution.csv.,FALSE,yes
+"D3a home delivery, the promise",home_delivery_orders.csv,region_share_of_national_orders,decimal,fraction,"IMPORTANT. This file covers ONE delivery region, not the country. The value is that region's share of national online orders. National order level is over 650,000 rows, which is not a teaching file, so the order-level detail is regional and the national picture lives in home_delivery_daily.csv. Do not scale this file up by dividing: the region is a real region, not a random sample, so its site mix and slot mix are its own. Use it for anything per-order and use the daily file for anything per-chain.",0.18,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,date,date,ISO 8601,Delivery date.,2024-12-19,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,fulfilment_site,string,,Foreign key to sites.site_id.,EFC-APD,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,slot_start,time,HH:MM,Start of the two-hour delivery window.,17:00,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,slot_end,time,HH:MM,End of the delivery window.,19:00,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,slots_offered,integer,van-slots,"How many van-slots E-commerce PLANNED for this window at this site. Set from the own fleet only: the vans based at the site, the routes they are rostered for, and an equal share of the seven windows. Vans hired in by the day are not counted.",12,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,slot_capacity,integer,orders,How many deliveries the planned van-slots could make in this window: slots_offered times the drops per van-slot the plan assumes. This is the denominator of the slot fill rate.,144,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,slot_fill_rate_pct,decimal,%,orders_delivered over slot_capacity. E-commerce has a target of 92 per cent; above 100 means the window was oversold.,96.5,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,orders,integer,orders,"Online orders from this site in this slot, delivered and collected together.",182,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,click_collect_orders,integer,orders,"Of those, the ones collected at a store.",33,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,orders_delivered,integer,orders,"Of those, the ones a van delivered. Every execution figure below - on time, complaints, temperature - is measured over THIS number, not over orders.",149,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,order_value_eur,decimal,EUR incl. VAT,Total order value in the slot.,17284.40,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,avg_order_value_eur,decimal,EUR incl. VAT,Average order value.,94.97,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,crates,integer,crates,Crates delivered.,551,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,lines_ordered,integer,order lines,Order lines picked.,7648,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,lines_substituted,integer,order lines,Lines delivered as a substitute.,306,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,lines_missing,integer,order lines,Lines not delivered at all.,268,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,orders_on_time,integer,orders,Delivered orders that made the promised window.,142,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,on_time_pct,decimal,%,orders_on_time over orders_delivered.,95.1,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,complaints,integer,complaints,Orders carrying any complaint code.,5,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,quality_complaints,integer,complaints,Orders carrying complaint_code product_quality.,1,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,orders_with_temp_log,integer,orders,Orders delivered by a van that carried a temperature logger.,78,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,temp_excursions,integer,orders,"Of the logged orders, the ones with a reading out of range in EITHER direction: chilled crates below +2 C, or frozen crates above -18 C. The per-order readings are in home_delivery_execution.csv.",9,yes
+"D3b home delivery, daily by slot",home_delivery_daily.csv,avg_customer_rating,decimal,1-5,Average of the ratings actually given. Empty when nobody rated.,4.52,no

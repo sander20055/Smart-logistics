@@ -1,0 +1,26 @@
+dataset;file;column;data_type;unit;description;example_value;required;;
+D1 store replenishment;store_replenishment.csv;delivery_id;string;;Primary key. One record is one delivery at one store.;DL-20250210-01234;yes;;
+D1 store replenishment;store_replenishment.csv;date;date;ISO 8601;"""Delivery date. Deliveries run six days a week. Monday to Saturday.""";2025-02-10;yes;;
+D1 store replenishment;store_replenishment.csv;site_id;string;;"""Foreign key to sites.site_id. Where this delivery departed from. A store receives a regional (fresh-morning) and a central (ambient and frozen-afternoon) delivery on the same day.""";CDC-APD;yes;;
+D1 store replenishment;store_replenishment.csv;store_id;string;;Foreign key to stores.store_id.;ST042;yes;;
+D1 store replenishment;store_replenishment.csv;route_id;string;;Route this stop belongs to. Several stops share one route_id.;RT-20250210-047;yes;;
+D1 store replenishment;store_replenishment.csv;stop_sequence;integer;;"""Position of this stop within the route-starting at 1.""";2;yes;;
+D1 store replenishment;store_replenishment.csv;vehicle_id;string;;Foreign key to vehicles.vehicle_id.;TR012;yes;;
+D1 store replenishment;store_replenishment.csv;driver_id;string;;"""Driver identifier: DRV001-DRV065. Not a separate master table.""";DRV018;yes;;
+D1 store replenishment;store_replenishment.csv;rc_ambient;integer;roll cages;Ambient roll cages delivered.;18;yes;;
+D1 store replenishment;store_replenishment.csv;rc_chilled;integer;roll cages;Chilled roll cages delivered.;0;yes;;
+D1 store replenishment;store_replenishment.csv;rc_frozen;integer;roll cages;Frozen roll cages delivered.;4;yes;;
+D1 store replenishment;store_replenishment.csv;cases_total;integer;cases;Total cases delivered on this stop.;1584;yes;;
+D1 store replenishment;store_replenishment.csv;window_start;time;HH:MM;Start of the agreed delivery window for this delivery.;06:12;yes;;
+D1 store replenishment;store_replenishment.csv;window_end;time;HH:MM;End of the agreed delivery window.;07:12;yes;;
+D1 store replenishment;store_replenishment.csv;planned_arrival;datetime;ISO 8601;Planned arrival time from the transport plan.;2025-02-10 06:27;yes;;
+D1 store replenishment;store_replenishment.csv;actual_arrival;datetime;ISO 8601;Recorded arrival time from the board computer.;2025-02-10 06:41;yes;;
+D1 store replenishment;store_replenishment.csv;distance_leg_km;decimal;km;"""Kilometres attributed to this stop. The leg from the previous location plus a proportional share of the drive back to the DC thus the stops of a route add up to the whole route.""";23.6;yes;;
+D1 store replenishment;store_replenishment.csv;driving_time_min;integer;minutes;Driving time on the leg to this stop.;34;yes;;
+D1 store replenishment;store_replenishment.csv;unloading_time_min;integer;minutes;Unloading time recorded at the store.;38;yes;;
+D1 store replenishment;store_replenishment.csv;energy_used;decimal;l or kWh;"""Fuel or energy attributed to this stop";" consistent with distance_leg_km. Unit in energy_unit.""";7.1;yes;
+D1 store replenishment;store_replenishment.csv;energy_unit;enum;;"""l for diesel vehicles";" kWh for electric ones.""";l;yes;
+D1 store replenishment;store_replenishment.csv;cost_trip_eur;decimal;EUR excl. VAT;"""Trip cost attributed to this stop: driver time"; vehicle kilometres;" a fixed stop charge and a share of planning overhead.""";312.44;yes
+D1 store replenishment;store_replenishment.csv;ze_zone;boolean;;TRUE if this store is inside a zero-emission zone. Duplicated from stores.csv for convenience.;FALSE;yes;;
+D1 store replenishment;store_replenishment.csv;subcontracted;boolean;;"""TRUE if the route was driven by a subcontracted haulier";" FALSE if it was driven by FreshWay's own fleet.""";FALSE;yes;
+D1 store replenishment;store_replenishment.csv;on_time;boolean;;Derived: TRUE where actual_arrival <= window_end.;TRUE;yes;;

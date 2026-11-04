@@ -1,0 +1,10 @@
+site_id,site_name,role,city,floor_area_m2,grid_connection_kva,peak_load_kw,dock_doors,temp_zones_m2,shifts
+CDC-APD,CDC Apeldoorn,central_dc,Apeldoorn,30000,1500,1060,28,ambient 22000;frozen 6000;chilled 2000,3
+RDC-ZWO,RDC Noord Zwolle,regional_dc,Zwolle,9000,600,360,12,chilled 7000;ambient 2000,2
+RDC-NIJ,RDC Zuid Nijmegen,regional_dc,Nijmegen,9000,600,360,12,chilled 7000;ambient 2000,2
+EFC-APD,EFC Apeldoorn,efc,Apeldoorn,15000,1500,600,14,chilled 6000;ambient 8000;frozen 1000,2
+HUB-ZWO,Hub Zwolle,hub,Zwolle,1200,150,30,4,chilled 400;ambient 800,2
+HUB-DEV,Hub Deventer,hub,Deventer,1200,150,30,4,chilled 400;ambient 800,2
+HUB-ARN,Hub Arnhem,hub,Arnhem,1200,150,30,4,chilled 400;ambient 800,2
+HUB-AMF,Hub Amersfoort,hub,Amersfoort,1200,150,30,4,chilled 400;ambient 800,2
+HUB-ENS,Hub Enschede,hub,Enschede,1200,150,30,4,chilled 400;ambient 800,2

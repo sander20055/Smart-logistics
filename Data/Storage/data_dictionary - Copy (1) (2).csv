@@ -1,0 +1,46 @@
+dataset,file,column,data_type,unit,description,example_value,required
+_how to open,ALL FILES,-,-,-,"These files are UTF-8, comma-separated, with a POINT as the decimal separator and ISO dates (YYYY-MM-DD). In Excel do not double-click them: use Data > From Text/CSV, set File Origin to 65001: Unicode (UTF-8), Delimiter to Comma and Locale to English (United States), then Load. Double-clicking on a Dutch Windows uses a semicolon and a decimal comma, which puts every row in one column and turns 1.5 into 15. In Power BI use Get Data > Text/CSV with the same three settings; it will detect them correctly on its own in most cases.",-,-
+D2a DC inbound,inbound_receipts.csv,receipt_id,string,,Primary key. One record is one inbound truck arrival.,IR-20250210-0431,yes
+D2a DC inbound,inbound_receipts.csv,date,date,ISO 8601,Date of the receipt.,2025-02-10,yes
+D2a DC inbound,inbound_receipts.csv,site_id,string,,Foreign key to sites.site_id. Receiving site.,CDC-APD,yes
+D2a DC inbound,inbound_receipts.csv,dock_id,string,,Dock the truck was handled at.,D07,yes
+D2a DC inbound,inbound_receipts.csv,supplier_id,string,,Foreign key to suppliers.supplier_id.,SUP018,yes
+D2a DC inbound,inbound_receipts.csv,po_number,string,,Purchase order reference.,PO250204312,yes
+D2a DC inbound,inbound_receipts.csv,product_group,string,,Foreign key to product_groups.group_id. The dominant group on this truck.,PG12,yes
+D2a DC inbound,inbound_receipts.csv,expected_arrival,datetime,ISO 8601,Booked slot time.,2025-02-10 09:15,yes
+D2a DC inbound,inbound_receipts.csv,actual_arrival,datetime,ISO 8601,Recorded arrival at the gate.,2025-02-10 12:22,yes
+D2a DC inbound,inbound_receipts.csv,pallets,integer,pallets,Pallets on the shipment. About 24 per truck.,24,yes
+D2a DC inbound,inbound_receipts.csv,cases,integer,cases,Cases on the shipment. About 80 per pallet.,1920,yes
+D2a DC inbound,inbound_receipts.csv,temp_zone,enum,,"Temperature regime of the goods: ambient, chilled or frozen.",ambient,yes
+D2a DC inbound,inbound_receipts.csv,temp_at_arrival_c,decimal,degrees C,"Temperature recorded on arrival. EMPTY where nothing was recorded, which is not the same as 0 degrees.",3.6,no
+D2a DC inbound,inbound_receipts.csv,quality_check,enum,,"Outcome of the receiving check: pass, partial or reject.",pass,yes
+D2a DC inbound,inbound_receipts.csv,reject_reason,enum,,Reason for a partial or rejected receipt. Empty when quality_check is pass.,temperature_deviation,no
+D2a DC inbound,inbound_receipts.csv,putaway_start,datetime,ISO 8601,Start of put-away into storage.,2025-02-10 12:58,yes
+D2a DC inbound,inbound_receipts.csv,putaway_end,datetime,ISO 8601,End of put-away.,2025-02-10 14:14,yes
+D2a DC inbound,inbound_receipts.csv,putaway_location,string,,"Storage location the pallets were put away to: prefix, temperature zone, aisle and bay. The prefix is HOME- for the product's own fixed location and OVF- for an overflow location.",HOME-AMB-14-27,yes
+D2a DC inbound,inbound_receipts.csv,gate_wait_min,integer,minutes,Waiting time between arrival at the gate and starting to unload.,26,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,date,date,ISO 8601,Operating date.,2025-02-10,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,site_id,string,,Foreign key to sites.site_id.,CDC-APD,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,shift,enum,,"night, morning or afternoon.",night,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,order_type,enum,,store or consumer.,store,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,temp_zone,enum,,"ambient, chilled or frozen. Part of the grain: one row per date, site, shift, order type and temperature zone.",chilled,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,lines_picked,integer,lines,Pick lines completed in this shift and zone.,6140,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,cases_picked,integer,cases,Cases picked in this shift.,73688,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,pick_time_total_min,integer,minutes,Total picking time in this shift.,6754,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,avg_pick_time_sec,decimal,seconds,Average time per pick line.,22.0,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,pickers_active,integer,people,Operators needed at an 85 per cent utilisation of an 8-hour shift.,17,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,lines_own_staff,integer,lines,Lines picked by permanent staff.,15106,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,lines_agency_staff,integer,lines,Lines picked by agency staff.,3316,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,errors,integer,lines,Lines picked incorrectly.,66,yes
+"D2c DC picking, daily summary",pick_daily_summary.csv,error_rate_pct,decimal,%,errors divided by lines_picked.,0.36,yes
+D5 site energy,site_energy_hourly.csv,datetime,datetime,ISO 8601,Start of the hour.,2024-12-16 18:00,yes
+D5 site energy,site_energy_hourly.csv,site_id,string,,Foreign key to sites.site_id.,CDC-APD,yes
+D5 site energy,site_energy_hourly.csv,electricity_kwh,decimal,kWh,Electricity drawn in this hour.,612.40,yes
+D5 site energy,site_energy_hourly.csv,peak_kw,decimal,kW,Highest quarter-hour load inside the hour.,1104.7,yes
+D5 site energy,site_energy_hourly.csv,refrigeration_kwh,decimal,kWh,The refrigeration part of electricity_kwh.,422.60,yes
+D5 site energy,site_energy_hourly.csv,process_kwh,decimal,kWh,"Everything in electricity_kwh that is not refrigeration: mechanisation, conveyors, lighting and the rest.",189.80,yes
+D5 site energy,site_energy_hourly.csv,pv_generation_kwh,decimal,kWh,Electricity generated on the site's own roof in this hour.,0.00,yes
+D5 site energy,site_energy_hourly.csv,gas_m3,decimal,m3,Natural gas burnt for heating in this hour.,18.40,yes
+D5 site energy,site_energy_hourly.csv,outside_temp_c,decimal,degrees C,Outside temperature at the site.,3.4,yes
+D5 site energy,site_energy_hourly.csv,truck_charging_kwh,decimal,kWh,Charging of the electric tractor units in this hour.,44.20,yes
+D5 site energy,site_energy_hourly.csv,van_charging_kwh,decimal,kWh,Charging of the delivery vans in this hour.,312.90,yes
