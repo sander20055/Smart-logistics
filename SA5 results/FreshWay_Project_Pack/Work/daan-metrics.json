@@ -1,0 +1,2073 @@
+{
+  "source_files": [
+    "FreshWay\\store_replenishment.csv",
+    "Data\\Outbound\\store_replenishment.csv",
+    "Outbound-teams\\store_replenishment (1).csv"
+  ],
+  "source_comparison": {
+    "freshway_vs_data_outbound_identical": true,
+    "team_physical_rows": 19730,
+    "team_valid_delivery_rows": 19242,
+    "team_extra_analysis_rows": 488,
+    "team_valid_rows_match_source": true
+  },
+  "period": {
+    "first": "2024-10-14",
+    "last": "2025-01-11",
+    "operating_dates": 76,
+    "duplicate_delivery_ids": 0,
+    "missing": {
+      "delivery_id": 0,
+      "date": 0,
+      "site_id": 0,
+      "store_id": 0,
+      "route_id": 0,
+      "stop_sequence": 0,
+      "vehicle_id": 0,
+      "driver_id": 0,
+      "rc_ambient": 0,
+      "rc_chilled": 0,
+      "rc_frozen": 0,
+      "cases_total": 0,
+      "window_start": 0,
+      "window_end": 0,
+      "planned_arrival": 0,
+      "actual_arrival": 0,
+      "distance_leg_km": 0,
+      "driving_time_min": 0,
+      "unloading_time_min": 0,
+      "energy_used": 0,
+      "energy_unit": 0,
+      "cost_trip_eur": 0,
+      "ze_zone": 0,
+      "subcontracted": 0,
+      "on_time": 0,
+      "window_start_dt": 0,
+      "window_end_dt": 0,
+      "window_min": 0,
+      "planned_offset_min": 0,
+      "planned_margin_min": 0,
+      "delay_from_plan_min": 0,
+      "recalc_by_close": 0,
+      "inside_slot": 0,
+      "early": 0,
+      "early_gt5": 0,
+      "late_min": 0,
+      "cages": 0
+    }
+  },
+  "overall": {
+    "n": 19242,
+    "stores": 120,
+    "routes": 11513,
+    "supplied_on_time_n": 18511,
+    "supplied_on_time_pct": 96.2010186051346,
+    "recalc_by_close_n": 18569,
+    "recalc_by_close_pct": 96.50244257353705,
+    "inside_slot_n": 17890,
+    "inside_slot_pct": 92.97370335723937,
+    "early_n": 679,
+    "early_gt5_n": 321,
+    "early_gt5_pct": 1.6682257561584035,
+    "flag_mismatch_n": 58,
+    "window_minutes": {
+      "30.0": 3847,
+      "60.0": 15395
+    },
+    "planned_offset_minutes": {
+      "15.0": 19242
+    },
+    "planned_margin_minutes": {
+      "15.0": 3847,
+      "45.0": 15395
+    },
+    "mean_deviation_min": 9.797162457125038,
+    "mean_unloading_min": 40.71406298721546,
+    "median_unloading_min": 38.0,
+    "unloading_p90_min": 61.0,
+    "late_n": 673,
+    "late_minutes_total": 5698.0,
+    "cages": 519540,
+    "cost_total_eur": 3701054.5599999996,
+    "cost_per_cage_eur": 7.12371436270547
+  },
+  "ze": {
+    "n": 3847,
+    "stores": 22,
+    "routes": 2891,
+    "supplied_on_time_n": 3365,
+    "supplied_on_time_pct": 87.47075643358461,
+    "recalc_by_close_n": 3408,
+    "recalc_by_close_pct": 88.58851052768391,
+    "inside_slot_n": 3407,
+    "inside_slot_pct": 88.56251624642579,
+    "early_n": 1,
+    "early_gt5_n": 0,
+    "early_gt5_pct": 0.0,
+    "flag_mismatch_n": 43,
+    "window_minutes": {
+      "30.0": 3847
+    },
+    "planned_offset_minutes": {
+      "15.0": 3847
+    },
+    "planned_margin_minutes": {
+      "15.0": 3847
+    },
+    "mean_deviation_min": 7.144008318170003,
+    "mean_unloading_min": 41.12919157785287,
+    "median_unloading_min": 40.0,
+    "unloading_p90_min": 58.40000000000009,
+    "late_n": 439,
+    "late_minutes_total": 2805.0,
+    "cages": 83127,
+    "cost_total_eur": 654414.28,
+    "cost_per_cage_eur": 7.872463579823644
+  },
+  "nonze": {
+    "n": 15395,
+    "stores": 98,
+    "routes": 8622,
+    "supplied_on_time_n": 15146,
+    "supplied_on_time_pct": 98.38259175056837,
+    "recalc_by_close_n": 15161,
+    "recalc_by_close_pct": 98.48002598246184,
+    "inside_slot_n": 14483,
+    "inside_slot_pct": 94.07599870087691,
+    "early_n": 678,
+    "early_gt5_n": 321,
+    "early_gt5_pct": 2.0850925625202987,
+    "flag_mismatch_n": 15,
+    "window_minutes": {
+      "60.0": 15395
+    },
+    "planned_offset_minutes": {
+      "15.0": 15395
+    },
+    "planned_margin_minutes": {
+      "45.0": 15395
+    },
+    "mean_deviation_min": 10.46014939915557,
+    "mean_unloading_min": 40.61032802858071,
+    "median_unloading_min": 37.0,
+    "unloading_p90_min": 62.0,
+    "late_n": 234,
+    "late_minutes_total": 2893.0,
+    "cages": 436413,
+    "cost_total_eur": 3046640.28,
+    "cost_per_cage_eur": 6.981094238714245
+  },
+  "routes": {
+    "n": 11513,
+    "mean_cages": 45.12637887605316,
+    "median_cages": 45.0,
+    "mean_stops": 1.671328063927734,
+    "max_cages": 66,
+    "over66_n": 0
+  },
+  "mismatch_examples": [
+    {
+      "delivery_id": "DL-20241014-00134",
+      "actual_arrival": "2024-10-14 07:21:00",
+      "window_end_dt": "2024-10-14 07:21:00",
+      "on_time": "False"
+    },
+    {
+      "delivery_id": "DL-20241014-00180",
+      "actual_arrival": "2024-10-14 04:28:00",
+      "window_end_dt": "2024-10-14 04:28:00",
+      "on_time": "False"
+    },
+    {
+      "delivery_id": "DL-20241015-00249",
+      "actual_arrival": "2024-10-15 16:00:00",
+      "window_end_dt": "2024-10-15 16:00:00",
+      "on_time": "False"
+    },
+    {
+      "delivery_id": "DL-20241017-00842",
+      "actual_arrival": "2024-10-17 12:45:00",
+      "window_end_dt": "2024-10-17 12:45:00",
+      "on_time": "False"
+    },
+    {
+      "delivery_id": "DL-20241018-01123",
+      "actual_arrival": "2024-10-18 05:12:00",
+      "window_end_dt": "2024-10-18 05:12:00",
+      "on_time": "False"
+    },
+    {
+      "delivery_id": "DL-20241018-01174",
+      "actual_arrival": "2024-10-18 08:42:00",
+      "window_end_dt": "2024-10-18 08:42:00",
+      "on_time": "False"
+    },
+    {
+      "delivery_id": "DL-20241019-01213",
+      "actual_arrival": "2024-10-19 15:31:00",
+      "window_end_dt": "2024-10-19 15:31:00",
+      "on_time": "False"
+    },
+    {
+      "delivery_id": "DL-20241019-01278",
+      "actual_arrival": "2024-10-19 14:48:00",
+      "window_end_dt": "2024-10-19 14:48:00",
+      "on_time": "False"
+    }
+  ],
+  "all_mismatches_exactly_window_close": true,
+  "consecutive_stop_issues": {
+    "n": 3068,
+    "out_of_possible": 7729,
+    "examples": [
+      {
+        "delivery_id": "DL-20241014-00004",
+        "route_id": "RT-20241014-0002",
+        "actual_arrival": "2024-10-14 15:45:00",
+        "minimum_arrival": "2024-10-14 16:05:00"
+      },
+      {
+        "delivery_id": "DL-20241014-00007",
+        "route_id": "RT-20241014-0003",
+        "actual_arrival": "2024-10-14 16:54:00",
+        "minimum_arrival": "2024-10-14 17:11:00"
+      },
+      {
+        "delivery_id": "DL-20241014-00029",
+        "route_id": "RT-20241014-0012",
+        "actual_arrival": "2024-10-14 16:33:00",
+        "minimum_arrival": "2024-10-14 16:38:00"
+      },
+      {
+        "delivery_id": "DL-20241014-00032",
+        "route_id": "RT-20241014-0013",
+        "actual_arrival": "2024-10-14 17:42:00",
+        "minimum_arrival": "2024-10-14 17:57:00"
+      },
+      {
+        "delivery_id": "DL-20241014-00043",
+        "route_id": "RT-20241014-0017",
+        "actual_arrival": "2024-10-14 14:52:00",
+        "minimum_arrival": "2024-10-14 15:10:00"
+      }
+    ]
+  },
+  "master_stores": {
+    "n": 120,
+    "ze_n": 22,
+    "unloading_windows": {
+      "(False, '06:00', '11:00')": 98,
+      "(True, '06:00', '08:00')": 22
+    }
+  },
+  "vehicle_columns": [
+    "vehicle_id",
+    "type",
+    "capacity_rc",
+    "capacity_crates",
+    "powertrain",
+    "range_km",
+    "consumption_per_100km",
+    "consumption_unit",
+    "ze_zone_allowed",
+    "home_site",
+    "ownership",
+    "refrigerated"
+  ],
+  "vehicle_capacity_columns": [
+    "capacity_rc"
+  ],
+  "capacity": {
+    "by_vehicle": [
+      {
+        "vehicle_id": "TR001",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR002",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR003",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR004",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR005",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR006",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR007",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR008",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR009",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR010",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR011",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR012",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR013",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR014",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR015",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR016",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR017",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR018",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR019",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR020",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR021",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR022",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR023",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR024",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR025",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR026",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR027",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR028",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR029",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR030",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR031",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR032",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR033",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR034",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR035",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR036",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR037",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR038",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR039",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TR040",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "CT041",
+        "capacity_rc": 40.0
+      },
+      {
+        "vehicle_id": "CT042",
+        "capacity_rc": 40.0
+      },
+      {
+        "vehicle_id": "CT043",
+        "capacity_rc": 40.0
+      },
+      {
+        "vehicle_id": "CT044",
+        "capacity_rc": 40.0
+      },
+      {
+        "vehicle_id": "CT045",
+        "capacity_rc": 40.0
+      },
+      {
+        "vehicle_id": "CT046",
+        "capacity_rc": 40.0
+      },
+      {
+        "vehicle_id": "CT047",
+        "capacity_rc": 40.0
+      },
+      {
+        "vehicle_id": "CT048",
+        "capacity_rc": 40.0
+      },
+      {
+        "vehicle_id": "CT049",
+        "capacity_rc": 40.0
+      },
+      {
+        "vehicle_id": "CT050",
+        "capacity_rc": 40.0
+      },
+      {
+        "vehicle_id": "RG051",
+        "capacity_rc": 30.0
+      },
+      {
+        "vehicle_id": "RG052",
+        "capacity_rc": 30.0
+      },
+      {
+        "vehicle_id": "TX001",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX002",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX003",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX004",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX005",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX006",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX007",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX008",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX009",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX010",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX011",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX012",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX013",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX014",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX015",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX016",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX017",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX018",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX019",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX020",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX021",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX022",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX023",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX024",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX025",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX026",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX027",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX028",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX029",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX030",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX031",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX032",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX033",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX034",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX035",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX036",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX037",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX038",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX039",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX040",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX041",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX042",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX043",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX044",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX045",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX046",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX047",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX048",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX049",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX050",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX051",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX052",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX053",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX054",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX055",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX056",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX057",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX058",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX059",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX060",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX061",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX062",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX063",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX064",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX065",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX066",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX067",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX068",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX069",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX070",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX071",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX072",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX073",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX074",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX075",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX076",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX077",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX078",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX079",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX080",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX081",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX082",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX083",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX084",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX085",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX086",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX087",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX088",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX089",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX090",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX091",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX092",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX093",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX094",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX095",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX096",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX097",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX098",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX099",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX100",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX101",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX102",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX103",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX104",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX105",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX106",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX107",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX108",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX109",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX110",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX111",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX112",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX113",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX114",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX115",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX116",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX117",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX118",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX119",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX120",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX121",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX122",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX123",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX124",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX125",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX126",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX127",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX128",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX129",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX130",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX131",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX132",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX133",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX134",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX135",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX136",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX137",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX138",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX139",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX140",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX141",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX142",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX143",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX144",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX145",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX146",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX147",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX148",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX149",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX150",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX151",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX152",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX153",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX154",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX155",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX156",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX157",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX158",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX159",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX160",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX161",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX162",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX163",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX164",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX165",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX166",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX167",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX168",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX169",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX170",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX171",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX172",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX173",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX174",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX175",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX176",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX177",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX178",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX179",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX180",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX181",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX182",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX183",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX184",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX185",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX186",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX187",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX188",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX189",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX190",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX191",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX192",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX193",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX194",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX195",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX196",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX197",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX198",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX199",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX200",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX201",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX202",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX203",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX204",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX205",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX206",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX207",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX208",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX209",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX210",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX211",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX212",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX213",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX214",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX215",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX216",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX217",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX218",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX219",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX220",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX221",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX222",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX223",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX224",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX225",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX226",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX227",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX228",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX229",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX230",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX231",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX232",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX233",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX234",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX235",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX236",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX237",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX238",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX239",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX240",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX241",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX242",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX243",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX244",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX245",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX246",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX247",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX248",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX249",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX250",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX251",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX252",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX253",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX254",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX255",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX256",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX257",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX258",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX259",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX260",
+        "capacity_rc": 66.0
+      },
+      {
+        "vehicle_id": "TX261",
+        "capacity_rc": 66.0
+      }
+    ],
+    "overcapacity_n": 0,
+    "weighted_utilization": 0.7318619275153264,
+    "mean_route_utilization": 0.7324036201500806
+  },
+  "data_domain_inventory": [
+    {
+      "path": "FreshWay\\data_dictionary - Copy (3).csv",
+      "rows": 26,
+      "columns": [
+        "dataset",
+        "file",
+        "column",
+        "data_type",
+        "unit",
+        "description",
+        "example_value",
+        "required"
+      ]
+    },
+    {
+      "path": "FreshWay\\data_dictionary.csv",
+      "rows": 59,
+      "columns": [
+        "dataset",
+        "file",
+        "column",
+        "data_type",
+        "unit",
+        "description",
+        "example_value",
+        "required"
+      ]
+    },
+    {
+      "path": "FreshWay\\product_groups.csv",
+      "rows": 20,
+      "columns": [
+        "group_id",
+        "group_name",
+        "category",
+        "temp_zone",
+        "shelf_life_days",
+        "avg_price_eur",
+        "units_per_case",
+        "colli_per_rc",
+        "share_of_skus",
+        "share_of_revenue",
+        "shrink_inefficiency",
+        "vat_rate",
+        "supply_flow"
+      ]
+    },
+    {
+      "path": "FreshWay\\sites.csv",
+      "rows": 9,
+      "columns": [
+        "site_id",
+        "site_name",
+        "role",
+        "city",
+        "floor_area_m2",
+        "grid_connection_kva",
+        "peak_load_kw",
+        "dock_doors",
+        "temp_zones_m2",
+        "shifts"
+      ]
+    },
+    {
+      "path": "FreshWay\\stores.csv",
+      "rows": 120,
+      "columns": [
+        "store_id",
+        "store_name",
+        "city",
+        "postcode",
+        "lat",
+        "lon",
+        "format",
+        "sales_area_m2",
+        "assigned_dc_ambient",
+        "assigned_dc_fresh",
+        "distance_to_dc_km",
+        "ze_zone",
+        "dock_type",
+        "unloading_window_start",
+        "unloading_window_end",
+        "click_collect"
+      ]
+    },
+    {
+      "path": "FreshWay\\store_replenishment.csv",
+      "rows": 19242,
+      "columns": [
+        "delivery_id",
+        "date",
+        "site_id",
+        "store_id",
+        "route_id",
+        "stop_sequence",
+        "vehicle_id",
+        "driver_id",
+        "rc_ambient",
+        "rc_chilled",
+        "rc_frozen",
+        "cases_total",
+        "window_start",
+        "window_end",
+        "planned_arrival",
+        "actual_arrival",
+        "distance_leg_km",
+        "driving_time_min",
+        "unloading_time_min",
+        "energy_used",
+        "energy_unit",
+        "cost_trip_eur",
+        "ze_zone",
+        "subcontracted",
+        "on_time"
+      ]
+    },
+    {
+      "path": "FreshWay\\suppliers.csv",
+      "rows": 450,
+      "columns": [
+        "supplier_id",
+        "supplier_name",
+        "product_groups",
+        "edi_orders",
+        "edi_desadv",
+        "agreed_lead_time_days",
+        "agreed_slot_window_min"
+      ]
+    },
+    {
+      "path": "FreshWay\\vehicles.csv",
+      "rows": 581,
+      "columns": [
+        "vehicle_id",
+        "type",
+        "capacity_rc",
+        "capacity_crates",
+        "powertrain",
+        "range_km",
+        "consumption_per_100km",
+        "consumption_unit",
+        "ze_zone_allowed",
+        "home_site",
+        "ownership",
+        "refrigerated"
+      ]
+    },
+    {
+      "path": "Outbound-teams\\data_dictionary.csv",
+      "rows": 25,
+      "columns": [
+        "dataset",
+        "file",
+        "column",
+        "data_type",
+        "unit",
+        "description",
+        "example_value",
+        "required",
+        "Unnamed: 8",
+        "Unnamed: 9"
+      ]
+    },
+    {
+      "path": "Outbound-teams\\store_replenishment (1).csv",
+      "rows": 19730,
+      "columns": [
+        "delivery_id",
+        "date",
+        "site_id",
+        "store_id",
+        "route_id",
+        "stop_sequence",
+        "vehicle_id",
+        "driver_id",
+        "rc_ambient",
+        "rc_chilled",
+        "rc_frozen",
+        "cases_total",
+        "window_start",
+        "window_end",
+        "planned_arrival",
+        "actual_arrival",
+        "distance_leg_km",
+        "driving_time_min",
+        "unloading_time_min",
+        "energy_used",
+        "energy_unit",
+        "cost_trip_eur",
+        "ze_zone",
+        "subcontracted",
+        "on_time"
+      ]
+    },
+    {
+      "path": "Data\\D2C\\data_dictionary.csv",
+      "rows": 48,
+      "columns": [
+        "dataset",
+        "file",
+        "column",
+        "data_type",
+        "unit",
+        "description",
+        "example_value",
+        "required"
+      ]
+    },
+    {
+      "path": "Data\\D2C\\delivery_routes.csv",
+      "rows": 20919,
+      "columns": [
+        "route_id",
+        "date",
+        "fulfilment_site",
+        "vehicle_id",
+        "stops",
+        "crates",
+        "distance_km",
+        "energy_kwh",
+        "first_delivery",
+        "last_delivery"
+      ]
+    },
+    {
+      "path": "Data\\D2C\\home_delivery_daily.csv",
+      "rows": 3822,
+      "columns": [
+        "date",
+        "fulfilment_site",
+        "slot_start",
+        "slot_end",
+        "slots_offered",
+        "slot_capacity",
+        "slot_fill_rate_pct",
+        "orders",
+        "click_collect_orders",
+        "orders_delivered",
+        "order_value_eur",
+        "avg_order_value_eur",
+        "crates",
+        "lines_ordered",
+        "lines_substituted",
+        "lines_missing",
+        "orders_on_time",
+        "on_time_pct",
+        "complaints",
+        "quality_complaints",
+        "orders_with_temp_log",
+        "temp_excursions",
+        "avg_customer_rating"
+      ]
+    },
+    {
+      "path": "Data\\D2C\\home_delivery_execution.csv",
+      "rows": 97100,
+      "columns": [
+        "order_id",
+        "delivery_actual",
+        "route_id",
+        "stop_sequence",
+        "vehicle_id",
+        "distance_leg_km",
+        "energy_kwh",
+        "temp_min_c",
+        "temp_max_c",
+        "crates_returned",
+        "customer_rating",
+        "complaint_code",
+        "on_time",
+        "region_share_of_national_orders"
+      ]
+    },
+    {
+      "path": "Data\\E-Commerce\\data_dictionary - Copy (5).csv",
+      "rows": 40,
+      "columns": [
+        "dataset",
+        "file",
+        "column",
+        "data_type",
+        "unit",
+        "description",
+        "example_value",
+        "required"
+      ]
+    },
+    {
+      "path": "Data\\E-Commerce\\home_delivery_daily.csv",
+      "rows": 3822,
+      "columns": [
+        "date",
+        "fulfilment_site",
+        "slot_start",
+        "slot_end",
+        "slots_offered",
+        "slot_capacity",
+        "slot_fill_rate_pct",
+        "orders",
+        "click_collect_orders",
+        "orders_delivered",
+        "order_value_eur",
+        "avg_order_value_eur",
+        "crates",
+        "lines_ordered",
+        "lines_substituted",
+        "lines_missing",
+        "orders_on_time",
+        "on_time_pct",
+        "complaints",
+        "quality_complaints",
+        "orders_with_temp_log",
+        "temp_excursions",
+        "avg_customer_rating"
+      ]
+    },
+    {
+      "path": "Data\\E-Commerce\\home_delivery_orders.csv",
+      "rows": 118412,
+      "columns": [
+        "order_id",
+        "order_datetime",
+        "customer_area",
+        "fulfilment_site",
+        "slot_start",
+        "slot_end",
+        "slot_price_eur",
+        "crates_ambient",
+        "crates_chilled",
+        "crates_frozen",
+        "lines_ordered",
+        "lines_substituted",
+        "lines_missing",
+        "order_value_eur",
+        "click_collect",
+        "region_share_of_national_orders"
+      ]
+    },
+    {
+      "path": "Data\\Orderpicking\\data_dictionary - Copy (2) (2).csv",
+      "rows": 30,
+      "columns": [
+        "dataset",
+        "file",
+        "column",
+        "data_type",
+        "unit",
+        "description",
+        "example_value",
+        "required"
+      ]
+    },
+    {
+      "path": "Data\\Orderpicking\\pick_daily_summary - Copy (2).csv",
+      "rows": 6282,
+      "columns": [
+        "date",
+        "site_id",
+        "shift",
+        "order_type",
+        "temp_zone",
+        "lines_picked",
+        "cases_picked",
+        "pick_time_total_min",
+        "avg_pick_time_sec",
+        "pickers_active",
+        "lines_own_staff",
+        "lines_agency_staff",
+        "errors",
+        "error_rate_pct"
+      ]
+    },
+    {
+      "path": "Data\\Orderpicking\\pick_lines_sample (1).csv",
+      "rows": 229391,
+      "columns": [
+        "pick_id",
+        "date",
+        "site_id",
+        "shift",
+        "order_type",
+        "order_ref",
+        "product_group",
+        "location",
+        "cases",
+        "pick_time_sec",
+        "picker_id",
+        "staff_type",
+        "error_flag",
+        "error_type",
+        "sample_fraction"
+      ]
+    },
+    {
+      "path": "Data\\Outbound\\data_dictionary - Copy (3).csv",
+      "rows": 26,
+      "columns": [
+        "dataset",
+        "file",
+        "column",
+        "data_type",
+        "unit",
+        "description",
+        "example_value",
+        "required"
+      ]
+    },
+    {
+      "path": "Data\\Outbound\\store_replenishment.csv",
+      "rows": 19242,
+      "columns": [
+        "delivery_id",
+        "date",
+        "site_id",
+        "store_id",
+        "route_id",
+        "stop_sequence",
+        "vehicle_id",
+        "driver_id",
+        "rc_ambient",
+        "rc_chilled",
+        "rc_frozen",
+        "cases_total",
+        "window_start",
+        "window_end",
+        "planned_arrival",
+        "actual_arrival",
+        "distance_leg_km",
+        "driving_time_min",
+        "unloading_time_min",
+        "energy_used",
+        "energy_unit",
+        "cost_trip_eur",
+        "ze_zone",
+        "subcontracted",
+        "on_time"
+      ]
+    },
+    {
+      "path": "Data\\Storage\\data_dictionary - Copy (1) (2).csv",
+      "rows": 45,
+      "columns": [
+        "dataset",
+        "file",
+        "column",
+        "data_type",
+        "unit",
+        "description",
+        "example_value",
+        "required"
+      ]
+    },
+    {
+      "path": "Data\\Storage\\inbound_receipts - Copy.csv",
+      "rows": 12331,
+      "columns": [
+        "receipt_id",
+        "date",
+        "site_id",
+        "dock_id",
+        "supplier_id",
+        "po_number",
+        "product_group",
+        "expected_arrival",
+        "actual_arrival",
+        "pallets",
+        "cases",
+        "temp_zone",
+        "temp_at_arrival_c",
+        "quality_check",
+        "reject_reason",
+        "putaway_start",
+        "putaway_end",
+        "putaway_location",
+        "gate_wait_min"
+      ]
+    },
+    {
+      "path": "Data\\Storage\\pick_daily_summary.csv",
+      "rows": 6282,
+      "columns": [
+        "date",
+        "site_id",
+        "shift",
+        "order_type",
+        "temp_zone",
+        "lines_picked",
+        "cases_picked",
+        "pick_time_total_min",
+        "avg_pick_time_sec",
+        "pickers_active",
+        "lines_own_staff",
+        "lines_agency_staff",
+        "errors",
+        "error_rate_pct"
+      ]
+    },
+    {
+      "path": "Data\\Storage\\site_energy_hourly (1).csv",
+      "rows": 19656,
+      "columns": [
+        "datetime",
+        "site_id",
+        "electricity_kwh",
+        "peak_kw",
+        "refrigeration_kwh",
+        "process_kwh",
+        "pv_generation_kwh",
+        "gas_m3",
+        "outside_temp_c",
+        "truck_charging_kwh",
+        "van_charging_kwh"
+      ]
+    }
+  ],
+  "ze_timestamp_translation_sensitivity": {
+    "0": {
+      "by_close_pct": 88.58851052768391,
+      "inside_slot_pct": 88.56251624642579
+    },
+    "5": {
+      "by_close_pct": 96.7507148427346,
+      "inside_slot_pct": 96.12685209253964
+    },
+    "10": {
+      "by_close_pct": 99.03821159344945,
+      "inside_slot_pct": 94.82713802963349
+    },
+    "15": {
+      "by_close_pct": 99.37613724980504,
+      "inside_slot_pct": 84.22147127631922
+    }
+  }
+}

@@ -1,0 +1,726 @@
+{
+  "repository": "sander20055/Smart-logistics",
+  "commit": "a6d4b67b62b1b75b78ad039312a58158dbcc8ad1",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha": "dfe0770424b2a19faf507a501ebfc23be8f54e7b",
+      "size": 66
+    },
+    {
+      "path": "Data/Board archive index.pdf",
+      "sha": "7dec58bf8ddb3592fe8b4a5e7780ba582a0efdbe",
+      "size": 238352
+    },
+    {
+      "path": "Data/C1 TM C12/Board card C03 — Subcontracted transport.pdf",
+      "sha": "683e88841a31adcb1f43956d1337ed25a410efd0",
+      "size": 210766
+    },
+    {
+      "path": "Data/C1 TM C12/Board card C09 — The 2024 automation project that was stopped.pdf",
+      "sha": "d012ac3189a3e864e466c3e9145917727faebdc5",
+      "size": 236273
+    },
+    {
+      "path": "Data/C1 TM C12/Board card C10 — Store property data.pdf",
+      "sha": "588737babee2e5ccd1d7371923baed411f8643cd",
+      "size": 209468
+    },
+    {
+      "path": "Data/C1 TM C12/Board card C11 — IT roadmap and contracts.pdf",
+      "sha": "72904bdfaf566604c2eb00370f44abce492cdbdb",
+      "size": 240304
+    },
+    {
+      "path": "Data/C1 TM C12/Board card C12 — Liability and food safety.pdf",
+      "sha": "6b35bef58687ddd8cb8b724dd1f7b903a755e054",
+      "size": 249346
+    },
+    {
+      "path": "Data/D2C/data opgeschoond/FreshWay-connected-data.xlsx",
+      "sha": "aa860b00b959543b61f7bdb17077820b312b78b0",
+      "size": 13442995
+    },
+    {
+      "path": "Data/D2C/data opgeschoond/Home delivery daily.xlsx",
+      "sha": "ada544c3a4f79b56e5939989f0c17715bc4e2304",
+      "size": 561922
+    },
+    {
+      "path": "Data/D2C/data opgeschoond/Home delivery orders.xlsx",
+      "sha": "6e1e617553ee1d69d1b42662bb40c2eaea8059da",
+      "size": 10512980
+    },
+    {
+      "path": "Data/D2C/data opgeschoond/data dictionary.xlsx",
+      "sha": "71bf1870d4af064e6774317c2c3434a9b6b346f1",
+      "size": 35617
+    },
+    {
+      "path": "Data/D2C/data opgeschoond/delivery routes.xlsx",
+      "sha": "db97814af3c4eae9bdb28677593805fc992fd8d5",
+      "size": 1364191
+    },
+    {
+      "path": "Data/D2C/data opgeschoond/home delivery execution.xlsx",
+      "sha": "8d09316370a6f3164a22c85142bf6bc81b5f0499",
+      "size": 6821473
+    },
+    {
+      "path": "Data/D2C/data_dictionary.csv",
+      "sha": "128f149a3340010fb8bc50bc9236ce8ef37f6469",
+      "size": 9034
+    },
+    {
+      "path": "Data/D2C/delivery_routes.csv",
+      "sha": "0445b15c20836a9f713b4d0475b866b2fc1ca0aa",
+      "size": 2007810
+    },
+    {
+      "path": "Data/D2C/home_delivery_daily.csv",
+      "sha": "6e1188c301dac2240852243159150176e3d3913b",
+      "size": 404028
+    },
+    {
+      "path": "Data/D2C/home_delivery_execution.csv",
+      "sha": "197786cef8deaaf1c8b074eef036f9582b08e52e",
+      "size": 9016184
+    },
+    {
+      "path": "Data/E-Commerce/Department file — E-commerce.pdf",
+      "sha": "8963788c02129a9dd8b04b5a655b7cce1c2eb8b0",
+      "size": 337958
+    },
+    {
+      "path": "Data/E-Commerce/data_dictionary - Copy (5).csv",
+      "sha": "86daf4313511c968949a1751c7678e587f157fe2",
+      "size": 7428
+    },
+    {
+      "path": "Data/E-Commerce/home_delivery_daily.csv",
+      "sha": "6e1188c301dac2240852243159150176e3d3913b",
+      "size": 404028
+    },
+    {
+      "path": "Data/E-Commerce/home_delivery_orders.csv",
+      "sha": "92b143f64d5b7a71113d974b571184fae97678b0",
+      "size": 13952742
+    },
+    {
+      "path": "Data/Orderpicking/Department file — Orderpicking.pdf",
+      "sha": "f5a88bf9d54e21ddc85d49dc557c3033ee80562a",
+      "size": 296921
+    },
+    {
+      "path": "Data/Orderpicking/data_dictionary - Copy (2) (2).csv",
+      "sha": "d58c1985b4f5cc8c75eb06c598051d0180de3ccf",
+      "size": 4473
+    },
+    {
+      "path": "Data/Orderpicking/pick_daily_summary - Copy (2).csv",
+      "sha": "0f323d6752ec9570132b0ff902366e7ba76913e8",
+      "size": 509555
+    },
+    {
+      "path": "Data/Orderpicking/pick_lines_sample (1).csv",
+      "sha": "005c436d40a665c8db434d8871509ad161db428f",
+      "size": 28731711
+    },
+    {
+      "path": "Data/Outbound/Department file — Outbound transport (1).pdf",
+      "sha": "74380116e262c4e72c5bb541a84ace0b5882e9ac",
+      "size": 319329
+    },
+    {
+      "path": "Data/Outbound/data_dictionary - Copy (3).csv",
+      "sha": "9915d259b0c9d45f1deeeb7045fedd669fae3aba",
+      "size": 4339
+    },
+    {
+      "path": "Data/Outbound/store_replenishment.csv",
+      "sha": "4ae2729b0fb1927291ce082b89403d49ae9dccdc",
+      "size": 3358975
+    },
+    {
+      "path": "Data/SCM/Board card C06 — Promotions.pdf",
+      "sha": "b063acf0b4842f205c59a9c32a46f745207f2bc6",
+      "size": 235419
+    },
+    {
+      "path": "Data/SCM/Board card C07 — Shrink detail.pdf",
+      "sha": "49a898dc94c63e166e0176b40d0cf7a5580d88a1",
+      "size": 150113
+    },
+    {
+      "path": "Data/Storage/Board card C05 — Energy and grid capacity.pdf",
+      "sha": "41c4b9b5589a595e971b8944d3efa64cda810201",
+      "size": 246842
+    },
+    {
+      "path": "Data/Storage/Department file — Storage.pdf",
+      "sha": "575e19d1d71403484bd6d63ced6b47f028372d35",
+      "size": 360800
+    },
+    {
+      "path": "Data/Storage/data_dictionary - Copy (1) (2).csv",
+      "sha": "b095a13e9bd4426c77c82f2edda9a6621e287d79",
+      "size": 6188
+    },
+    {
+      "path": "Data/Storage/inbound_receipts - Copy.csv",
+      "sha": "f259fc149d74ad128e9cc5918a54d47f894c4832",
+      "size": 2142444
+    },
+    {
+      "path": "Data/Storage/pick_daily_summary.csv",
+      "sha": "0f323d6752ec9570132b0ff902366e7ba76913e8",
+      "size": 509555
+    },
+    {
+      "path": "Data/Storage/site_energy_hourly (1).csv",
+      "sha": "fe6d50b3d2c90123f75c4b3413c622f0de227737",
+      "size": 1399169
+    },
+    {
+      "path": "FreshWay/App.png",
+      "sha": "6c208e0120f73dd80cd9f86b6753d1fbe5325e07",
+      "size": 2652481
+    },
+    {
+      "path": "FreshWay/Board Memo.docx",
+      "sha": "4d51784bac2ff233be3904be28154352f3dd86b5",
+      "size": 38864
+    },
+    {
+      "path": "FreshWay/Board archive index.pdf",
+      "sha": "7dec58bf8ddb3592fe8b4a5e7780ba582a0efdbe",
+      "size": 238352
+    },
+    {
+      "path": "FreshWay/Cheat sheet — Councils.pdf",
+      "sha": "44cd7154bdf4bffa9a78507b21d653853f524e2a",
+      "size": 67852
+    },
+    {
+      "path": "FreshWay/Cheat sheet — Departments.pdf",
+      "sha": "88ef2741db5a819b90e83d20897c9063c4b9fe64",
+      "size": 70229
+    },
+    {
+      "path": "FreshWay/Cheat sheet — MT.pdf",
+      "sha": "7c0b40dfd29d50094121852212c7a9ff9c82c398",
+      "size": 72252
+    },
+    {
+      "path": "FreshWay/Company dossier.pdf",
+      "sha": "8ec1d83a844c1bda1e0292916606d4f7664c1f3f",
+      "size": 633647
+    },
+    {
+      "path": "FreshWay/Control center.png",
+      "sha": "c7def3c841dbd40ae91ec5e91f33a045d9f080d0",
+      "size": 1678340
+    },
+    {
+      "path": "FreshWay/Council card.docx",
+      "sha": "895f22fa6b26ca09b30866bbc33861b8898825ba",
+      "size": 39224
+    },
+    {
+      "path": "FreshWay/DC met truck - Copy.png",
+      "sha": "d392d6783b33fa5944aa9e3206fdde5bef23626f",
+      "size": 2317421
+    },
+    {
+      "path": "FreshWay/DC.png",
+      "sha": "ad16222514ec22263efecd710bbdff25cd96a618",
+      "size": 1910712
+    },
+    {
+      "path": "FreshWay/Dataset guide.pdf",
+      "sha": "0df3e30f77a8564bc0b2b4ec6858f0ee5c89cc7f",
+      "size": 335277
+    },
+    {
+      "path": "FreshWay/Debrief card.docx",
+      "sha": "5d57b3be111e34d3e0e56294da900f86a92f1d95",
+      "size": 38254
+    },
+    {
+      "path": "FreshWay/Delivery van.png",
+      "sha": "206d0959c2c31163d0410432c917770fc7970bcf",
+      "size": 2275334
+    },
+    {
+      "path": "FreshWay/Delivery.png",
+      "sha": "04d6e5e7a77433ffb5c1a0b7fdeb89c67a5f4690",
+      "size": 2708532
+    },
+    {
+      "path": "FreshWay/Department Charter.docx",
+      "sha": "c092d3b50c24aa50f0dc15a99471fe499030f9b3",
+      "size": 39152
+    },
+    {
+      "path": "FreshWay/Department file — Outbound transport.pdf",
+      "sha": "74380116e262c4e72c5bb541a84ace0b5882e9ac",
+      "size": 319329
+    },
+    {
+      "path": "FreshWay/Employee.png",
+      "sha": "13b6cf1421b3bfcd781f86db40764311bf9649bb",
+      "size": 2549533
+    },
+    {
+      "path": "FreshWay/Forklift.png",
+      "sha": "bfdd257feb06d4923ebcb9aa5056275b8bb8ca8e",
+      "size": 2693290
+    },
+    {
+      "path": "FreshWay/FreshWay Working Agreement.docx",
+      "sha": "be0b36daf8543c6d8430673544e536d8b79dcb0d",
+      "size": 39093
+    },
+    {
+      "path": "FreshWay/FreshWay glossary — twenty words.pdf",
+      "sha": "47b6cd1e45754b08c287d24a88401dc177b63510",
+      "size": 283616
+    },
+    {
+      "path": "FreshWay/FreshWay styleguide/FreshWay styleguide-pakket/DESIGN.md",
+      "sha": "86c2ccb9b6d8c15c690e2fb3a1b3b5452c9f7599",
+      "size": 20277
+    },
+    {
+      "path": "FreshWay/FreshWay styleguide/FreshWay styleguide-pakket/FreshWay style guide.pdf",
+      "sha": "f1372e070aa6cafbcb4e18f730c517fc02c79d59",
+      "size": 1418468
+    },
+    {
+      "path": "FreshWay/FreshWay styleguide/FreshWay styleguide-pakket/README.md",
+      "sha": "bb3214328a030633846d757b3b2161bce4b06233",
+      "size": 3364
+    },
+    {
+      "path": "FreshWay/FreshWay styleguide/FreshWay styleguide-pakket/assets/examples/bar-chart-dark.jpg",
+      "sha": "c7b4b4209ec26fb5d764d41804387bbde0d124eb",
+      "size": 40655
+    },
+    {
+      "path": "FreshWay/FreshWay styleguide/FreshWay styleguide-pakket/assets/examples/bar-chart-light.jpg",
+      "sha": "fe0d53b47bd0f38830c01295d3e79fb20951cae5",
+      "size": 40267
+    },
+    {
+      "path": "FreshWay/FreshWay styleguide/FreshWay styleguide-pakket/assets/examples/bar-chart-slide-dark.jpg",
+      "sha": "748368a37de0d2b3ef2f3fa40f67872f2764497e",
+      "size": 117830
+    },
+    {
+      "path": "FreshWay/FreshWay styleguide/FreshWay styleguide-pakket/assets/examples/network-map-dark-build-up.jpg",
+      "sha": "cec02406d88b600cab3fb8970d73ee3dbff8fa6f",
+      "size": 204286
+    },
+    {
+      "path": "FreshWay/FreshWay styleguide/FreshWay styleguide-pakket/assets/examples/network-map-dark-present.jpg",
+      "sha": "83d9c95122b152ceaff41693090cb4b43c821fa3",
+      "size": 199285
+    },
+    {
+      "path": "FreshWay/FreshWay styleguide/FreshWay styleguide-pakket/assets/examples/network-map-flat-chart.jpg",
+      "sha": "116a51baeb676280b02dd3ae663cba9ef738dcc6",
+      "size": 180849
+    },
+    {
+      "path": "FreshWay/FreshWay styleguide/FreshWay styleguide-pakket/assets/examples/network-map-light.jpg",
+      "sha": "cf96d45717c9d6beb8fb40618e1c9f7cd4b8eecc",
+      "size": 142174
+    },
+    {
+      "path": "FreshWay/FreshWay styleguide/FreshWay styleguide-pakket/assets/logo/favicon.png",
+      "sha": "bc1fb561ef8fca3080d409c22254a9f5c7b68937",
+      "size": 4609
+    },
+    {
+      "path": "FreshWay/FreshWay styleguide/FreshWay styleguide-pakket/assets/logo/freshway-logo-cropped.png",
+      "sha": "4d4a4c19f20d6d14f2197afc3ec3c90312d8469b",
+      "size": 147017
+    },
+    {
+      "path": "FreshWay/FreshWay styleguide/FreshWay styleguide-pakket/assets/logo/freshway-logo.png",
+      "sha": "8257b7b0081f8b7bf00d2a1c758793e84aad7263",
+      "size": 1135106
+    },
+    {
+      "path": "FreshWay/Information Request.docx",
+      "sha": "3597f84e33a7db9efe964380c4a46c9110c2ef01",
+      "size": 38879
+    },
+    {
+      "path": "FreshWay/Interface Agreement.docx",
+      "sha": "41c7add795c66f1ac6bd4f41872fe05cda1f811f",
+      "size": 38734
+    },
+    {
+      "path": "FreshWay/Investment Register entry.docx",
+      "sha": "0b36d9f32b2ffccb4704705c93661d5fad76fd62",
+      "size": 38663
+    },
+    {
+      "path": "FreshWay/Logo.png",
+      "sha": "8257b7b0081f8b7bf00d2a1c758793e84aad7263",
+      "size": 1135106
+    },
+    {
+      "path": "FreshWay/MT meeting — agenda and minutes.docx",
+      "sha": "7f2c9c49667fb348912d77b5ffefb30b0e1e9950",
+      "size": 39090
+    },
+    {
+      "path": "FreshWay/Non-Delivery Notice.docx",
+      "sha": "8ff793d09f767164dcdae888b7c75db0356b77c6",
+      "size": 38942
+    },
+    {
+      "path": "FreshWay/Order picker 1.png",
+      "sha": "001bf77c38683dde988c0bd8d6bf116a97ba8892",
+      "size": 1742032
+    },
+    {
+      "path": "FreshWay/Order picker 2.png",
+      "sha": "209112dd74ac0e7ab6815c600fce5e021542eaf9",
+      "size": 1802355
+    },
+    {
+      "path": "FreshWay/Table of Contents.html",
+      "sha": "64dd0545b5ce3aa35766b958ebe7ac03f5b61372",
+      "size": 5522
+    },
+    {
+      "path": "FreshWay/Technology Register entry.docx",
+      "sha": "6e565e405dbf7901e003bc323412dea9f2d97b63",
+      "size": 38609
+    },
+    {
+      "path": "FreshWay/Truck.png",
+      "sha": "01aa581c9132d0b15f56473f83f81bb64edbb795",
+      "size": 2276836
+    },
+    {
+      "path": "FreshWay/Winkel binnenkant.png",
+      "sha": "88ca927fe5e88ed310237d0a8e4f12b60a3d9223",
+      "size": 2929307
+    },
+    {
+      "path": "FreshWay/Winkel.png",
+      "sha": "8ae9306ebe39f03fe560b8063807275355625e5b",
+      "size": 2749208
+    },
+    {
+      "path": "FreshWay/Your first five minutes with your data.pdf",
+      "sha": "973ee95a84cc106795a70afbdcbf0908d698019b",
+      "size": 343665
+    },
+    {
+      "path": "FreshWay/data_dictionary - Copy (3).csv",
+      "sha": "9915d259b0c9d45f1deeeb7045fedd669fae3aba",
+      "size": 4339
+    },
+    {
+      "path": "FreshWay/data_dictionary.csv",
+      "sha": "a117c46c6f242777870b808cf1f4e51e02875ebb",
+      "size": 8499
+    },
+    {
+      "path": "FreshWay/product_groups.csv",
+      "sha": "8fddc4ba11abbb95ee8c497357063ab3d654f352",
+      "size": 1986
+    },
+    {
+      "path": "FreshWay/sites.csv",
+      "sha": "a661fddf8b3f08204bf59878d23f13d9bed595a1",
+      "size": 849
+    },
+    {
+      "path": "FreshWay/store_replenishment.csv",
+      "sha": "4ae2729b0fb1927291ce082b89403d49ae9dccdc",
+      "size": 3358975
+    },
+    {
+      "path": "FreshWay/stores.csv",
+      "sha": "ced354d1bb4a2be966946ca3a89a9131aaf442b7",
+      "size": 15184
+    },
+    {
+      "path": "FreshWay/suppliers.csv",
+      "sha": "a5065ca49f727e545b4b3384918902102f4b35c6",
+      "size": 21783
+    },
+    {
+      "path": "FreshWay/vehicles.csv",
+      "sha": "75dc42a7532eecbfacbd300a753ae323514e96bc",
+      "size": 39626
+    },
+    {
+      "path": "Lessons/2026_Lesson 1 - Introduction and company start-up.pptx",
+      "sha": "67ebf58c228e4c228b150d5041f08e1540b59e6b",
+      "size": 11557847
+    },
+    {
+      "path": "Lessons/2026_Lesson 2 - Smart logistics and business intelligence.pptx",
+      "sha": "ee95723d1c157e7f784a0f8e7b3573e1a6c2bf10",
+      "size": 41829107
+    },
+    {
+      "path": "Lessons/2026_Lesson 3 - Data driven Logistics.pptx",
+      "sha": "7310afc07e3b78b66aad95ec49268364bc039dd9",
+      "size": 50200782
+    },
+    {
+      "path": "Lessons/2026_Lesson 4 - Digital developments.pptx",
+      "sha": "332c8484fbea98accbfef9dfd347e313e8bb94b4",
+      "size": 74022847
+    },
+    {
+      "path": "Lessons/2026_Lesson 5 - AI in logistics.pptx",
+      "sha": "901b9fc587425059bacd42f5c9cba0a8839dc587",
+      "size": 21553006
+    },
+    {
+      "path": "Lessons/2026_Lesson 6 - Self organising logistics.pptx",
+      "sha": "699f50485a2487d8495ce9c61dabd7b69926715f",
+      "size": 21476611
+    },
+    {
+      "path": "Lessons/AI in logistics.html",
+      "sha": "28fa0f7a6bc1d1350ba6a7205ae8cb162d163eec",
+      "size": 13264
+    },
+    {
+      "path": "Lessons/Agent team — the prompts you copy (EN).pdf",
+      "sha": "52f6529f1701aed8a930eeaeea84f57c16b3d2e4",
+      "size": 450953
+    },
+    {
+      "path": "Lessons/Digital developments.html",
+      "sha": "9f737351e6835bdf7496284b48071f11c66d7838",
+      "size": 14230
+    },
+    {
+      "path": "Lessons/Logistics and Business Intelligence.html",
+      "sha": "613ae4f84ce118cd39ddd2616dbf6fea5115cb8a",
+      "size": 15673
+    },
+    {
+      "path": "Lessons/Self organizing logistics.html",
+      "sha": "bb44bd757c6b48165a4600e1441edd3d55fe5937",
+      "size": 14813
+    },
+    {
+      "path": "Lessons/Sensor application canvas.docx",
+      "sha": "6fc5b3348f76d89535e01bafc0e1794bc2727542",
+      "size": 27054
+    },
+    {
+      "path": "Lessons/Sensors and smart supply chains.html",
+      "sha": "7dd6acb50bd7f419c211f9668ed6673d097f7aae",
+      "size": 12901
+    },
+    {
+      "path": "Lessons/Table of Contents.html",
+      "sha": "f990e767805a260f7f5259b92b3e8d9d3abcabd0",
+      "size": 2826
+    },
+    {
+      "path": "Lessons/Zonder titel - Copy.html",
+      "sha": "3a2ee5d7e14c8dff40402f9cd7321b0d1371b15c",
+      "size": 15115
+    },
+    {
+      "path": "Lessons/Zonder titel.html",
+      "sha": "b7e0bb4b09a388fa229fd429f96362979ac6c344",
+      "size": 22872
+    },
+    {
+      "path": "Lessons/signals-amid-the-noise-ebook-pdf.pdf",
+      "sha": "82f654cf48c4dd7069898bafb79a5036f9b77c68",
+      "size": 1885394
+    },
+    {
+      "path": "Outbound-teams/Board memo's/Board Memo.docx",
+      "sha": "e8ddfa6175ebdd53d9e92463ad4e437b76189093",
+      "size": 36706
+    },
+    {
+      "path": "Outbound-teams/Department file — Outbound transport.pdf",
+      "sha": "74380116e262c4e72c5bb541a84ace0b5882e9ac",
+      "size": 319329
+    },
+    {
+      "path": "Outbound-teams/Format Word.docx",
+      "sha": "e35c5bd5bdc0959cceef238a9ca14edbd7b992e6",
+      "size": 1900431
+    },
+    {
+      "path": "Outbound-teams/Format powerpoint.pptx",
+      "sha": "51d2d338909ba85c4ee99ac4059c9f966f967c73",
+      "size": 310603
+    },
+    {
+      "path": "Outbound-teams/FreshWay_Outbound_SA1_Research_Plan_FreshWay_Style.pptx",
+      "sha": "c14aebe66614e4fac07e9bcff3aec124b5029b7d",
+      "size": 1070052
+    },
+    {
+      "path": "Outbound-teams/FreshWay_Outbound_SA2_Final.pptx",
+      "sha": "28c9c807a08587bd30ed16307f3ee3e210c12842",
+      "size": 479811
+    },
+    {
+      "path": "Outbound-teams/FreshWay_Outbound_SA3.pptx",
+      "sha": "1d8ec4e72ab20a3a8abee4c7abd0707a0faf2c66",
+      "size": 2578434
+    },
+    {
+      "path": "Outbound-teams/Gedeelde documenten/Paragrafo Loop.loop",
+      "sha": "86543755a49b4ddbdc823c366dd57f31caeff1c7",
+      "size": 12250
+    },
+    {
+      "path": "Outbound-teams/SA3/FreshWay_Outbound_SA3_Data_Flow.pptx",
+      "sha": "954c791cb4a4a07ced1d43a308b1a6fc96f6ec76",
+      "size": 198686
+    },
+    {
+      "path": "Outbound-teams/SA3/FreshWay_Outbound_SA3_Report_Costs_Corrected.pdf",
+      "sha": "e06a10c567aaf97de6483ff58dcd7d43a12dcd86",
+      "size": 289773
+    },
+    {
+      "path": "Outbound-teams/SA4/FreshWay_SA4.pptx",
+      "sha": "851b668521795797c4057742b77709f6671ea109",
+      "size": 54633
+    },
+    {
+      "path": "Outbound-teams/SA4/FreshWay_SA4_Section3_Report.docx",
+      "sha": "5216ef0b30b9ab2e7a466d47fb9a19a4ee6023d3",
+      "size": 52524
+    },
+    {
+      "path": "Outbound-teams/SA4/SA4 Outbound – AI concept and use cases (Quinten).docx",
+      "sha": "229b91b529c51461ca2696183907106da1f4ff25",
+      "size": 21102
+    },
+    {
+      "path": "Outbound-teams/SA4/SA4 Outbound – Slide 1 AI concept.pptx",
+      "sha": "2a3cdff3e1c393b2147ab55098db0c01e84b7582",
+      "size": 128477
+    },
+    {
+      "path": "Outbound-teams/SA5/FreshWay_SA5_Presentation.pptx",
+      "sha": "5b8ba379145cb34b5b0ed6e60d9fe37a5cdfd8d8",
+      "size": 49966
+    },
+    {
+      "path": "Outbound-teams/SA5/FreshWay_SA5_Section3_Report.docx",
+      "sha": "16f61f71f5753a702a33634fcf356fc1fa013c19",
+      "size": 54259
+    },
+    {
+      "path": "Outbound-teams/SA5/FreshWay_SA5_Tech.pptx",
+      "sha": "bf691213ec561b0d484c9a64222d03775959760b",
+      "size": 47456
+    },
+    {
+      "path": "Outbound-teams/SA5/SA5 Outbound – Research and concept (Quinten).docx",
+      "sha": "d6ae915aecf266a7d1f46ae0a8627f67c73ca9a4",
+      "size": 122681
+    },
+    {
+      "path": "Outbound-teams/Team/Data log.xlsx",
+      "sha": "d9f3d7518ed5f0c7f8c554f4f43ccfc1d57c40de",
+      "size": 14517
+    },
+    {
+      "path": "Outbound-teams/Team/Robin.md",
+      "sha": "470d19047b701996db50d477095ed301e6bca0d5",
+      "size": 3108
+    },
+    {
+      "path": "Outbound-teams/data_dictionary.csv",
+      "sha": "2c4c5ea0ee9c7c7a71a4f63e5ec8472dd5438382",
+      "size": 3861
+    },
+    {
+      "path": "Outbound-teams/store_replenishment (1).csv",
+      "sha": "746105bd418f4d9a0d89d544ee4fe3954decdb03",
+      "size": 3397734
+    },
+    {
+      "path": "Portfolio assignment/Assignment Smart Logistics 2026.docx",
+      "sha": "656a8be6e744ccf7aaa1a41ad53e9dfcf67ea6dd",
+      "size": 58727
+    },
+    {
+      "path": "Portfolio assignment/Klassenlijst EDSLOG najaar 2026.xlsx",
+      "sha": "fff4e242d093eee2135b856dcfecb74ae0922f1f",
+      "size": 22563
+    },
+    {
+      "path": "Portfolio assignment/Peer assessment Smart Logistics.docx",
+      "sha": "e2517d57827f4ea89f5326431419ba2068bd4539",
+      "size": 80239
+    },
+    {
+      "path": "Portfolio assignment/Rubric Smart Logistics - autumn 2026.xlsx",
+      "sha": "178cc10d7f8bd0b9ddff8a9cc5def5b0c9f178ee",
+      "size": 21308
+    },
+    {
+      "path": "Portfolio assignment/Rubric map and evidence appendix - template.docx",
+      "sha": "4c1cdfa6a553524c343888ec8848f43015f08e35",
+      "size": 39302
+    },
+    {
+      "path": "Portfolio assignment/Self and group assessment EDSLOG.xlsx",
+      "sha": "d1a572890e222e3ca554b8b25dfba959f2c3fd8a",
+      "size": 22104
+    },
+    {
+      "path": "Portfolio assignment/Strategic performance dashboard.html",
+      "sha": "27f8c2a0a8da05780d73fcf38375fa092b84a1a0",
+      "size": 83484
+    },
+    {
+      "path": "Portfolio assignment/Table of Contents.html",
+      "sha": "09fedfcbec84e3d5708be2de1c78bb55a8ab9ed7",
+      "size": 1502
+    },
+    {
+      "path": "README.md",
+      "sha": "53278712e3b542bc02025a2caa4f1959e3fd686a",
+      "size": 85
+    },
+    {
+      "path": "Studyguide/Before you hand in - infographic.pdf",
+      "sha": "c6a767e091b8fac163e4f500bdcaca2f54f7e721",
+      "size": 327156
+    },
+    {
+      "path": "Studyguide/Handleiding - Bouw je eigen agentteam in ChatGPT Work.docx",
+      "sha": "7830103a2d22d97f545b44d1915a750f974c1b8a",
+      "size": 977074
+    },
+    {
+      "path": "Studyguide/Study Guide Smart logistics - autumn 2026 V2.docx",
+      "sha": "e0589ae8ff0f197243e6cc82e4b86ee8f826d9f7",
+      "size": 70172
+    },
+    {
+      "path": "Studyguide/Table of Contents.html",
+      "sha": "38f2a8809dfaea2fd538ad15a9886863545847e7",
+      "size": 918
+    }
+  ]
+}

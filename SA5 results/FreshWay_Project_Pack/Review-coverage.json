@@ -1,0 +1,602 @@
+[
+  {
+    "path": "README.md",
+    "status": "read",
+    "characters": 85
+  },
+  {
+    "path": "studyguide.docx",
+    "status": "read",
+    "characters": 19649
+  },
+  {
+    "path": "test.docx",
+    "status": "read",
+    "characters": 866
+  },
+  {
+    "path": "Data\\Board archive index.pdf",
+    "status": "read",
+    "characters": 3046
+  },
+  {
+    "path": "FreshWay\\Board archive index.pdf",
+    "status": "read",
+    "characters": 3046
+  },
+  {
+    "path": "FreshWay\\Board Memo.docx",
+    "status": "read",
+    "characters": 866
+  },
+  {
+    "path": "FreshWay\\Cheat sheet \u2014 Councils.pdf",
+    "status": "read",
+    "characters": 2419
+  },
+  {
+    "path": "FreshWay\\Cheat sheet \u2014 Departments.pdf",
+    "status": "read",
+    "characters": 2643
+  },
+  {
+    "path": "FreshWay\\Cheat sheet \u2014 MT.pdf",
+    "status": "read",
+    "characters": 2695
+  },
+  {
+    "path": "FreshWay\\Company dossier.pdf",
+    "status": "read",
+    "characters": 15261
+  },
+  {
+    "path": "FreshWay\\Council card.docx",
+    "status": "read",
+    "characters": 1475
+  },
+  {
+    "path": "FreshWay\\Dataset guide.pdf",
+    "status": "read",
+    "characters": 7491
+  },
+  {
+    "path": "FreshWay\\data_dictionary - Copy (3).csv",
+    "status": "read",
+    "characters": 1703
+  },
+  {
+    "path": "FreshWay\\data_dictionary.csv",
+    "status": "read",
+    "characters": 1355
+  },
+  {
+    "path": "FreshWay\\Debrief card.docx",
+    "status": "read",
+    "characters": 652
+  },
+  {
+    "path": "FreshWay\\Department Charter.docx",
+    "status": "read",
+    "characters": 1196
+  },
+  {
+    "path": "FreshWay\\Department file \u2014 Outbound transport.pdf",
+    "status": "read",
+    "characters": 4895
+  },
+  {
+    "path": "FreshWay\\FreshWay glossary \u2014 twenty words.pdf",
+    "status": "read",
+    "characters": 3889
+  },
+  {
+    "path": "FreshWay\\FreshWay Working Agreement.docx",
+    "status": "read",
+    "characters": 1446
+  },
+  {
+    "path": "FreshWay\\Information Request.docx",
+    "status": "read",
+    "characters": 1020
+  },
+  {
+    "path": "FreshWay\\Interface Agreement.docx",
+    "status": "read",
+    "characters": 882
+  },
+  {
+    "path": "FreshWay\\Investment Register entry.docx",
+    "status": "read",
+    "characters": 792
+  },
+  {
+    "path": "FreshWay\\MT meeting \u2014 agenda and minutes.docx",
+    "status": "read",
+    "characters": 1164
+  },
+  {
+    "path": "FreshWay\\Non-Delivery Notice.docx",
+    "status": "read",
+    "characters": 843
+  },
+  {
+    "path": "FreshWay\\product_groups.csv",
+    "status": "read",
+    "characters": 1004
+  },
+  {
+    "path": "FreshWay\\sites.csv",
+    "status": "read",
+    "characters": 866
+  },
+  {
+    "path": "FreshWay\\stores.csv",
+    "status": "read",
+    "characters": 1389
+  },
+  {
+    "path": "FreshWay\\store_replenishment.csv",
+    "status": "read",
+    "characters": 1928
+  },
+  {
+    "path": "FreshWay\\suppliers.csv",
+    "status": "read",
+    "characters": 546
+  },
+  {
+    "path": "FreshWay\\Table of Contents.html",
+    "status": "read",
+    "characters": 1102
+  },
+  {
+    "path": "FreshWay\\Technology Register entry.docx",
+    "status": "read",
+    "characters": 710
+  },
+  {
+    "path": "FreshWay\\vehicles.csv",
+    "status": "read",
+    "characters": 837
+  },
+  {
+    "path": "FreshWay\\Your first five minutes with your data.pdf",
+    "status": "read",
+    "characters": 4016
+  },
+  {
+    "path": "Lessons\\2026_Lesson 1 - Introduction and company start-up.pptx",
+    "status": "read",
+    "characters": 40775
+  },
+  {
+    "path": "Lessons\\2026_Lesson 2 - Smart logistics and business intelligence.pptx",
+    "status": "read",
+    "characters": 56558
+  },
+  {
+    "path": "Lessons\\2026_Lesson 3 - Data driven Logistics.pptx",
+    "status": "read",
+    "characters": 45132
+  },
+  {
+    "path": "Lessons\\2026_Lesson 4 - Digital developments.pptx",
+    "status": "read",
+    "characters": 20417
+  },
+  {
+    "path": "Lessons\\2026_Lesson 5 - AI in logistics.pptx",
+    "status": "read",
+    "characters": 40225
+  },
+  {
+    "path": "Lessons\\2026_Lesson 6 - Self organising logistics.pptx",
+    "status": "read",
+    "characters": 29699
+  },
+  {
+    "path": "Lessons\\Agent team \u2014 the prompts you copy (EN).pdf",
+    "status": "read",
+    "characters": 19552
+  },
+  {
+    "path": "Lessons\\AI in logistics.html",
+    "status": "read",
+    "characters": 9138
+  },
+  {
+    "path": "Lessons\\Digital developments.html",
+    "status": "read",
+    "characters": 9841
+  },
+  {
+    "path": "Lessons\\Logistics and Business Intelligence.html",
+    "status": "read",
+    "characters": 10244
+  },
+  {
+    "path": "Lessons\\Self organizing logistics.html",
+    "status": "read",
+    "characters": 10402
+  },
+  {
+    "path": "Lessons\\Sensor application canvas.docx",
+    "status": "read",
+    "characters": 1911
+  },
+  {
+    "path": "Lessons\\Sensors and smart supply chains.html",
+    "status": "read",
+    "characters": 8581
+  },
+  {
+    "path": "Lessons\\signals-amid-the-noise-ebook-pdf.pdf",
+    "status": "read",
+    "characters": 17071
+  },
+  {
+    "path": "Lessons\\Table of Contents.html",
+    "status": "read",
+    "characters": 740
+  },
+  {
+    "path": "Lessons\\Zonder titel - Copy.html",
+    "status": "read",
+    "characters": 10158
+  },
+  {
+    "path": "Lessons\\Zonder titel.html",
+    "status": "read",
+    "characters": 15226
+  },
+  {
+    "path": "Outbound-teams\\data_dictionary.csv",
+    "status": "read",
+    "characters": 1169
+  },
+  {
+    "path": "Outbound-teams\\Department file \u2014 Outbound transport.pdf",
+    "status": "read",
+    "characters": 4895
+  },
+  {
+    "path": "Outbound-teams\\Format powerpoint.pptx",
+    "status": "read",
+    "characters": 5543
+  },
+  {
+    "path": "Outbound-teams\\Format Word.docx",
+    "status": "read",
+    "characters": 80
+  },
+  {
+    "path": "Outbound-teams\\FreshWay_Outbound_SA1_Research_Plan_FreshWay_Style.pptx",
+    "status": "read",
+    "characters": 1682
+  },
+  {
+    "path": "Outbound-teams\\FreshWay_Outbound_SA2_Final.pptx",
+    "status": "read",
+    "characters": 3376
+  },
+  {
+    "path": "Outbound-teams\\FreshWay_Outbound_SA3.pptx",
+    "status": "read",
+    "characters": 3014
+  },
+  {
+    "path": "Outbound-teams\\store_replenishment (1).csv",
+    "status": "read",
+    "characters": 1544
+  },
+  {
+    "path": "Portfolio assignment\\Assignment Smart Logistics 2026.docx",
+    "status": "read",
+    "characters": 8824
+  },
+  {
+    "path": "Portfolio assignment\\Klassenlijst EDSLOG najaar 2026.xlsx",
+    "status": "read",
+    "characters": 2210
+  },
+  {
+    "path": "Portfolio assignment\\Peer assessment Smart Logistics.docx",
+    "status": "read",
+    "characters": 1834
+  },
+  {
+    "path": "Portfolio assignment\\Rubric map and evidence appendix - template.docx",
+    "status": "read",
+    "characters": 3123
+  },
+  {
+    "path": "Portfolio assignment\\Rubric Smart Logistics - autumn 2026.xlsx",
+    "status": "read",
+    "characters": 5971
+  },
+  {
+    "path": "Portfolio assignment\\Self and group assessment EDSLOG.xlsx",
+    "status": "read",
+    "characters": 2014
+  },
+  {
+    "path": "Portfolio assignment\\Strategic performance dashboard.html",
+    "status": "read",
+    "characters": 13834
+  },
+  {
+    "path": "Portfolio assignment\\Table of Contents.html",
+    "status": "read",
+    "characters": 406
+  },
+  {
+    "path": "Studyguide\\Before you hand in - infographic.pdf",
+    "status": "read",
+    "characters": 1928
+  },
+  {
+    "path": "Studyguide\\Handleiding - Bouw je eigen agentteam in ChatGPT Work.docx",
+    "status": "read",
+    "characters": 30265
+  },
+  {
+    "path": "Studyguide\\Study Guide Smart logistics - autumn 2026 V2.docx",
+    "status": "read",
+    "characters": 19649
+  },
+  {
+    "path": "Studyguide\\Table of Contents.html",
+    "status": "read",
+    "characters": 249
+  },
+  {
+    "path": "Data\\C1 TM C12\\Board card C03 \u2014 Subcontracted transport.pdf",
+    "status": "read",
+    "characters": 2892
+  },
+  {
+    "path": "Data\\C1 TM C12\\Board card C09 \u2014 The 2024 automation project that was stopped.pdf",
+    "status": "read",
+    "characters": 3362
+  },
+  {
+    "path": "Data\\C1 TM C12\\Board card C10 \u2014 Store property data.pdf",
+    "status": "read",
+    "characters": 2693
+  },
+  {
+    "path": "Data\\C1 TM C12\\Board card C11 \u2014 IT roadmap and contracts.pdf",
+    "status": "read",
+    "characters": 2896
+  },
+  {
+    "path": "Data\\C1 TM C12\\Board card C12 \u2014 Liability and food safety.pdf",
+    "status": "read",
+    "characters": 3545
+  },
+  {
+    "path": "Data\\D2C\\data_dictionary.csv",
+    "status": "read",
+    "characters": 1838
+  },
+  {
+    "path": "Data\\D2C\\delivery_routes.csv",
+    "status": "read",
+    "characters": 952
+  },
+  {
+    "path": "Data\\D2C\\home_delivery_daily.csv",
+    "status": "read",
+    "characters": 1507
+  },
+  {
+    "path": "Data\\D2C\\home_delivery_execution.csv",
+    "status": "read",
+    "characters": 1106
+  },
+  {
+    "path": "Data\\E-Commerce\\data_dictionary - Copy (5).csv",
+    "status": "read",
+    "characters": 1669
+  },
+  {
+    "path": "Data\\E-Commerce\\Department file \u2014 E-commerce.pdf",
+    "status": "read",
+    "characters": 6472
+  },
+  {
+    "path": "Data\\E-Commerce\\home_delivery_daily.csv",
+    "status": "read",
+    "characters": 1507
+  },
+  {
+    "path": "Data\\E-Commerce\\home_delivery_orders.csv",
+    "status": "read",
+    "characters": 1338
+  },
+  {
+    "path": "Data\\Orderpicking\\data_dictionary - Copy (2) (2).csv",
+    "status": "read",
+    "characters": 1569
+  },
+  {
+    "path": "Data\\Orderpicking\\Department file \u2014 Orderpicking.pdf",
+    "status": "read",
+    "characters": 4801
+  },
+  {
+    "path": "Data\\Orderpicking\\pick_daily_summary - Copy (2).csv",
+    "status": "read",
+    "characters": 961
+  },
+  {
+    "path": "Data\\Orderpicking\\pick_lines_sample (1).csv",
+    "status": "read",
+    "characters": 1283
+  },
+  {
+    "path": "Data\\Outbound\\data_dictionary - Copy (3).csv",
+    "status": "read",
+    "characters": 1703
+  },
+  {
+    "path": "Data\\Outbound\\Department file \u2014 Outbound transport (1).pdf",
+    "status": "read",
+    "characters": 4895
+  },
+  {
+    "path": "Data\\Outbound\\store_replenishment.csv",
+    "status": "read",
+    "characters": 1928
+  },
+  {
+    "path": "Data\\SCM\\Board card C06 \u2014 Promotions.pdf",
+    "status": "read",
+    "characters": 2549
+  },
+  {
+    "path": "Data\\SCM\\Board card C07 \u2014 Shrink detail.pdf",
+    "status": "read",
+    "characters": 1340
+  },
+  {
+    "path": "Data\\Storage\\Board card C05 \u2014 Energy and grid capacity.pdf",
+    "status": "read",
+    "characters": 2751
+  },
+  {
+    "path": "Data\\Storage\\data_dictionary - Copy (1) (2).csv",
+    "status": "read",
+    "characters": 1395
+  },
+  {
+    "path": "Data\\Storage\\Department file \u2014 Storage.pdf",
+    "status": "read",
+    "characters": 6846
+  },
+  {
+    "path": "Data\\Storage\\inbound_receipts - Copy.csv",
+    "status": "read",
+    "characters": 1756
+  },
+  {
+    "path": "Data\\Storage\\pick_daily_summary.csv",
+    "status": "read",
+    "characters": 961
+  },
+  {
+    "path": "Data\\Storage\\site_energy_hourly (1).csv",
+    "status": "read",
+    "characters": 866
+  },
+  {
+    "path": "Data\\D2C\\data opgeschoond\\data dictionary.xlsx",
+    "status": "read",
+    "characters": 9692
+  },
+  {
+    "path": "Data\\D2C\\data opgeschoond\\delivery routes.xlsx",
+    "status": "read",
+    "characters": 1108
+  },
+  {
+    "path": "Data\\D2C\\data opgeschoond\\FreshWay-connected-data.xlsx",
+    "status": "read",
+    "characters": 8584
+  },
+  {
+    "path": "Data\\D2C\\data opgeschoond\\Home delivery daily.xlsx",
+    "status": "read",
+    "characters": 1644
+  },
+  {
+    "path": "Data\\D2C\\data opgeschoond\\home delivery execution.xlsx",
+    "status": "read",
+    "characters": 1156
+  },
+  {
+    "path": "Data\\D2C\\data opgeschoond\\Home delivery orders.xlsx",
+    "status": "read",
+    "characters": 1411
+  },
+  {
+    "path": "FreshWay\\FreshWay styleguide\\FreshWay styleguide-pakket\\DESIGN.md",
+    "status": "read",
+    "characters": 20252
+  },
+  {
+    "path": "FreshWay\\FreshWay styleguide\\FreshWay styleguide-pakket\\FreshWay style guide.pdf",
+    "status": "read",
+    "characters": 5972
+  },
+  {
+    "path": "FreshWay\\FreshWay styleguide\\FreshWay styleguide-pakket\\README.md",
+    "status": "read",
+    "characters": 3364
+  },
+  {
+    "path": "Outbound-teams\\Board memo's\\Board Memo.docx",
+    "status": "read",
+    "characters": 904
+  },
+  {
+    "path": "Outbound-teams\\SA3\\FreshWay_Outbound_SA3_Data_Flow.pptx",
+    "status": "read",
+    "characters": 13074
+  },
+  {
+    "path": "Outbound-teams\\SA3\\FreshWay_Outbound_SA3_Report_Costs_Corrected.pdf",
+    "status": "read",
+    "characters": 16202
+  },
+  {
+    "path": "Outbound-teams\\SA4\\FreshWay_SA4.pptx",
+    "status": "read",
+    "characters": 4522
+  },
+  {
+    "path": "Outbound-teams\\SA4\\FreshWay_SA4_Section3_Report.docx",
+    "status": "read",
+    "characters": 7270
+  },
+  {
+    "path": "Outbound-teams\\SA4\\SA4 Outbound \u2013 AI concept and use cases (Quinten).docx",
+    "status": "read",
+    "characters": 18874
+  },
+  {
+    "path": "Outbound-teams\\SA4\\SA4 Outbound \u2013 Slide 1 AI concept.pptx",
+    "status": "read",
+    "characters": 2091
+  },
+  {
+    "path": "Outbound-teams\\SA5\\FreshWay_SA5_Presentation.pptx",
+    "status": "read",
+    "characters": 2341
+  },
+  {
+    "path": "Outbound-teams\\SA5\\FreshWay_SA5_Section3_Report.docx",
+    "status": "read",
+    "characters": 14263
+  },
+  {
+    "path": "Outbound-teams\\SA5\\FreshWay_SA5_Tech.pptx",
+    "status": "read",
+    "characters": 1577
+  },
+  {
+    "path": "Outbound-teams\\SA5\\SA5 Outbound \u2013 Research and concept (Quinten).docx",
+    "status": "read",
+    "characters": 16069
+  },
+  {
+    "path": "Outbound-teams\\Team\\Data log.xlsx",
+    "status": "read",
+    "characters": 739
+  },
+  {
+    "path": "Outbound-teams\\Team\\Robin.md",
+    "status": "read",
+    "characters": 3106
+  }
+]
